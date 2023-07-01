@@ -1,0 +1,9 @@
+Alembertian
+Baber
+Eq
+mathematica
+NDSolveValue
+Sildes
+eigenstates
+FindRoot
+Mathematica
