@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  30 MAY 2023 21:42
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  1 JUL 2023 20:33
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/xialingyu/Library/CloudStorage/OneDrive-个人/GW_Scattering/GR_note
-(/Users/xialingyu/Library/CloudStorage/OneDrive-个人/GW_Scattering/GR_note.tex
+**/Users/xialingyu/Documents/Notes/GW_Scattering/GR_note
+(/Users/xialingyu/Documents/Notes/GW_Scattering/GR_note.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -896,7 +896,7 @@ LaTeX Info: Redefining \nameref on input line 140.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<cover.jpeg, id=75, 892.33376pt x 501.875pt>
+<cover.jpeg, id=79, 892.33376pt x 501.875pt>
 File: cover.jpeg Graphic file (type jpg)
 <use cover.jpeg>
 Package luatex.def Info: cover.jpeg  used on input line 143.
@@ -994,24 +994,24 @@ LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 186.
  [2]
-<pic/earth.png, id=115, 722.7pt x 486.81876pt>
+<pic/earth.png, id=121, 722.7pt x 486.81876pt>
 File: pic/earth.png Graphic file (type png)
 <use pic/earth.png>
 Package luatex.def Info: pic/earth.png  used on input line 200.
 (luatex.def)             Requested size: 170.71652pt x 114.99667pt.
-<pic/earths.png, id=116, 722.7pt x 422.57875pt>
+<pic/earths.png, id=122, 722.7pt x 422.57875pt>
 File: pic/earths.png Graphic file (type png)
 <use pic/earths.png>
 Package luatex.def Info: pic/earths.png  used on input line 208.
 (luatex.def)             Requested size: 227.62204pt x 133.09366pt.
  [3<./pic/earth.png>]
-<pic/football.jpeg, id=124, 501.875pt x 501.875pt>
+<pic/football.jpeg, id=130, 501.875pt x 501.875pt>
 File: pic/football.jpeg Graphic file (type jpg)
 <use pic/football.jpeg>
 Package luatex.def Info: pic/football.jpeg  used on input line 220.
 (luatex.def)             Requested size: 142.26378pt x 142.26239pt.
  [4<./pic/earths.png><./pic/football.jpeg>]
-<pic/circle.png, id=132, 441.65pt x 441.65pt>
+<pic/circle.png, id=138, 441.65pt x 441.65pt>
 File: pic/circle.png Graphic file (type png)
 <use pic/circle.png>
 Package luatex.def Info: pic/circle.png  used on input line 250.
@@ -1022,23 +1022,23 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 2
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [6] [7] [8] (./GR_note.aux)
 Package rerunfilecheck Info: File `GR_note.out' has not changed.
-(rerunfilecheck)             Checksum: B4B607FD361236F42E3E4B7C17548022;1177.
+(rerunfilecheck)             Checksum: 1D9EAE2B06DF5BFC356CC2C3D59B26FE;1288.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38435 strings out of 477785
+ 38439 strings out of 477785
  100000,1144653 words of node,token memory allocated
- 2142 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 2 glue, 115 kern, 1 glyph, 142 attribute, 63 glue_spec, 142 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 2:1357,3:429,4:110,5:627,6:57,7:5599,8:58,9:937,10:9,11:353
- 57622 multiletter control sequences out of 65536+600000
+ 2258 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 2 glue, 131 kern, 1 glyph, 151 attribute, 63 glue_spec, 151 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 2:816,3:434,4:122,5:486,6:58,7:5188,8:42,9:545,10:9,11:353
+ 57623 multiletter control sequences out of 65536+600000
  127 fonts using 9262415 bytes
- 90i,20n,95p,1023b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,95p,1002b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
-Output written on GR_note.pdf (10 pages, 764179 bytes).
+Output written on GR_note.pdf (10 pages, 758418 bytes).
 
-PDF statistics: 207 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 131072)
- 320 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 215 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 131072)
+ 328 words of extra memory for PDF output out of 10000 (max. 100000000)
 

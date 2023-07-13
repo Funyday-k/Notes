@@ -255,7 +255,7 @@ If you ask us to use several words to describe what is manifold, I'll give you s
 
 \begin{itemize}
     \item Local Euclidean space
-    \item Cover
+    \item Covering
     \item Smooth(For differentiable manifolds)
 \end{itemize}
 
@@ -291,7 +291,34 @@ We are already familiar with the inference of vector space, and we can not direc
     \end{itemize}
 \end{tcolorbox}
 
-How to understand this map? It differs from our conventional concept that vector is just a bar with an arrow which implies two key elements: length and direction. However, when we switch to the general point of view, we need to summarize its essences, this map is to tell us a point in manifold corresponds a real number. The map is arbitrary, so there are countless vectors correspond countless maps. And we know local area in point $p$ is mapping a Euclidean space, then we can construct a map from Euclidean space to vector that we can certainly describe this vector. What else, you can see this map that it acts on a topology and  Meanwhile, it leads us to introduce the \textbf{basis} to describe it.
+How to understand this map? It differs from our conventional concept that vector is just a bar with an arrow which implies two key elements: length and direction. However, when we switch to the general point of view, we need to summarize its essences, this map is to tell us a point in manifold corresponds a real number. The map is arbitrary, so there are countless vectors correspond countless maps. And we know local area in point $p$ is mapping a Euclidean space, then we can construct a map from Euclidean space to vector that we can certainly describe this vector. What else, you can see this map that it acts on a function and  meanwhile, it leads us to introduce the \textbf{coordinates} and \textbf{basis} to describe it.
+
+\subsection{Coordinate and basis}
+
+Recall the concept of coordinates, we can use several numbers to describe location of a point(relatively). Of course, the kind of coordinate is countless, we should select more convenient one in given situations. Also, whatever we choose, it should contains the same information for us. That is to say, we can change coordinate system, but we can not get new physics.
+
+For example, we want to describe an ant on a ball. It's obvious to select spherical coordinate to describe its location, motion and so on. Here we are, set the radius of ball is $r$. There exists a limitation $r^{2}=x^{2}+y^{2}+z^{2}$. So the freedom degree is two, we can just use two sets of number to describe it.
+
+\begin{align}
+    X=\sin \theta\cos \phi\\
+    Y=r\sin \theta\sin \phi\\
+    Z=r\cos\theta
+\end{align}
+
+For this instance, coordinates $(r,\theta,\phi)$ and $(X,Y,Z)$ are both effective. Generally speaking, we denote $(x_{1},x_{2},\cdots,x_{n})$ as generalized coordinate. 
+
+Then with definition of coordinate, we can also define what is curve. Just like a ball
+
+\begin{tcolorbox}[title=\textbf{Curve},colback=SeaGreen!10!CornflowerBlue!10,colframe=RoyalPurple!55!Aquamarine!100!]
+    Set $I$ is an interval, so $C^{r}$ map defined as $C:I\rightarrow M$ is called a curve on the manifold $M$. For any $t\in I$, it corresponds unique point $C(t)\in M$, called \textbf{parameter}.
+\end{tcolorbox}
+
+It differs from our traditional definition, when we think of the curve it usually corresponds subsets in manifold $M$. Actually, curve is map itself. So if we select another parameter but also map the same subset, we assume they are different. 
+
+
+
+
+\subsection{Tangent Vector}
 
 If we have a coordinate system $(O,\Psi)$ and coordinate $x^{\mu}$. Then as for any smooth function $f\in \mathscr{F}_{M}$ we use such coordinate system to generate a N-element function $F(x^{1},\cdots, x^{n})$, which implies a group of vector denoted as $X_{\mu}$ that act on a function $f\in \mathscr{F}_{M}$ resulting a real number $X_{\mu}(f)$:
 
@@ -327,45 +354,8 @@ Obviously, we use many kinds of coordinates, and many physical essences is found
 
 The above equation is called \textbf{Vector component transformation expression}.
 
-\subsection{Curve and Tangent Vector}
-
-One interesting concept is curve, which can also imply another important concept tangent vector 
-
-\begin{tcolorbox}[title=\textbf{Curve},colback=SeaGreen!10!CornflowerBlue!10,colframe=RoyalPurple!55!Aquamarine!100!]
-    Set $I$ is an interval, so $C^{r}$ map defined as $C:I\rightarrow M$ is called a curve on the manifold $M$. For any $t\in I$, it corresponds unique point $C(t)\in M$, called \textbf{parameter}.
-\end{tcolorbox}
-
-It differs from our traditional definition, when we think of the curve it usually corresponds subsets in manifold $M$. Actually, curve is map itself. So if we select another parameter but also map the same subset, we assume they are different. 
 
 
-\begin{align}
-\begin{array}{l}
-\begin{array}{l}
-    \mathrm{D} \rho-\bar{\delta} \kappa=\left(\rho^2+\sigma \bar{\sigma}\right)+\rho(\varepsilon+\bar{\varepsilon})-\bar{\kappa} \tau-\kappa(3 \alpha+\bar{\beta}-\pi)+\Phi_{00}, \\
-    \mathrm{D} \sigma-\delta \kappa=\sigma(\rho+\bar{\rho})+\sigma(3 \varepsilon-\bar{\varepsilon})-\kappa(\tau-\bar{\pi}+\bar{\alpha}+3 \beta)+\Psi_0, \\
-    \mathrm{D} \tau-\Delta \kappa=\rho(\tau+\bar{\pi})+\sigma(\bar{\tau}+\pi)+\tau(\varepsilon-\bar{\varepsilon})-\kappa(3 \gamma+\bar{\gamma})+\Psi_1+\Phi_{01}, \\
-    \mathrm{D} \alpha-\bar{\delta} \varepsilon=\alpha(\rho+\bar{\varepsilon}-2 \varepsilon)+\beta \bar{\sigma}-\bar{\beta} \varepsilon-\kappa \lambda-\bar{\kappa} \gamma+\pi(\varepsilon+\rho)+\Phi_{10}, \\
-    \mathrm{D} \beta-\delta \varepsilon=\sigma(\alpha+\pi)+\beta(\bar{\rho}-\bar{\varepsilon})-\kappa(\mu+\gamma)-\varepsilon(\bar{\alpha}-\bar{\pi})+\Psi_1, \\
-    \mathrm{D} \gamma-\Delta \varepsilon=\alpha(\tau+\bar{\pi})+\beta(\bar{\tau}+\pi)-\gamma(\varepsilon+\bar{\varepsilon})-\varepsilon(\gamma+\bar{\gamma})+\tau \pi-v \kappa+\Psi_2+\Phi_{11}-R / 24,
-\end{array}\\
-    \begin{array}{l}
-        \mathrm{D} \lambda-\bar{\delta} \pi=(\rho \lambda+\bar{\sigma} \mu)+\pi^2+\pi(\alpha-\bar{\beta})-v \bar{\kappa}-\lambda(3 \varepsilon-\bar{\varepsilon})+\Phi_{20}, \\
-        \mathrm{D} \mu-\delta \pi=(\bar{\rho} \mu+\sigma \lambda)+\pi \bar{\pi}-\mu(\varepsilon+\bar{\varepsilon})-\pi(\bar{\alpha}-\beta)-v \kappa+\Psi_2+R / 12, \\
-        \mathrm{D} v-\Delta \pi=\mu(\pi+\bar{\tau})+\lambda(\bar{\pi}+\tau)+\pi(\gamma-\bar{\gamma})-v(3 \varepsilon+\bar{\varepsilon})+\Psi_3+\Phi_{21}, \\
-        \Delta \lambda-\bar{\delta} v=-\lambda(\mu+\bar{\mu})-\lambda(3 \gamma-\bar{\gamma})+v(3 \alpha+\bar{\beta}+\pi-\bar{\tau})-\Psi_4, \\
-        \delta \rho-\bar{\delta} \sigma=\rho(\bar{\alpha}+\beta)-\sigma(3 \alpha-\bar{\beta})+\tau(\rho-\bar{\rho})+\kappa(\mu-\bar{\mu})-\Psi_1+\Phi_{01}, \\
-        \delta \alpha-\bar{\delta} \beta=(\mu \rho-\lambda \sigma)+\alpha \bar{\alpha}+\beta \bar{\beta}-2 \alpha \beta+\gamma(\rho-\bar{\rho})+\varepsilon(\mu-\bar{\mu})-\Psi_2+\Phi_{11}+R / 24,
-    \end{array}\\
-\begin{array}{l}
-        \delta \lambda-\bar{\delta} \mu=v(\rho-\bar{\rho})+\pi(\mu-\bar{\mu})+\mu(\alpha+\bar{\beta})+\lambda(\bar{\alpha}-3 \beta)-\Psi_3+\Phi_{21}, \\
-        \delta v-\Delta \mu=\left(\mu^2+\lambda \bar{\lambda}\right)+\mu(\gamma+\bar{\gamma})-\bar{v} \pi+v(\tau-3 \beta-\bar{\alpha})+\Phi_{22}, \\
-        \delta \gamma-\Delta \beta=\gamma(\tau-\bar{\alpha}-\beta)+\mu \tau-\sigma v-\varepsilon \bar{v}-\beta(\gamma-\bar{\gamma}-\mu)+\alpha \bar{\lambda}+\Phi_{12}, \\
-        \delta \tau-\Delta \sigma=(\mu \sigma+\bar{\lambda} \rho)+\tau(\tau+\beta-\bar{\alpha})-\sigma(3 \gamma-\bar{\gamma})-\kappa \bar{v}+\Phi_{02}, \\
-        \Delta \rho-\bar{\delta} \tau=-(\rho \bar{\mu}+\sigma \lambda)+\tau(\bar{\beta}-\alpha-\bar{\tau})+\rho(\gamma+\bar{\gamma})+v \kappa-\Psi_2-R / 12, \\
-        \Delta \alpha-\bar{\delta} \gamma=v(\rho+\varepsilon)-\lambda(\tau+\beta)+\alpha(\bar{\gamma}-\bar{\mu})+\gamma(\bar{\beta}-\bar{\tau})-\Psi_3 .
-    \end{array}
-\end{array}
-\end{align}
 
 
 \end{document}
