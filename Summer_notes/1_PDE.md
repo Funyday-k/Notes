@@ -47,3 +47,18 @@ $$\frac{\partial^{2} u}{\partial x^{2}}-a^{2}\frac{\partial u}{\partial x^{2}}=0
 
 本征函数展开法
 
+### 斯图姆刘维尔型方程
+
+$$\frac{d}{dx}\left[p(x)\frac{dy}{dx}\right]+[\lambda \rho(x)+q (x)]y=0$$
+
+$$ L\equiv -\frac{d}{dx}\left[p(x)\frac{d}{dx}\right]+q(x)\rightarrow Ly(x)\rho(x) y (x)\\
+u(x)=\sqrt{\rho(x)}y(x)\rightarrow \hat{L}u(x)=\lambda u(x)$$
+
+S-L型方程的算符$L$是自伴的
+
+### 自伴算符的性质
+
+1. 自伴算符的本征值必然存在
+2. 自伴算富的本征值必为实数，且其全体构成一可数集，即本征值是分立的
+3. 自伴算符的本征函数具有正交性，即对于不同本征值的本征函数一定正交的
+
