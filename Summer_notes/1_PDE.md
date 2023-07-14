@@ -24,8 +24,7 @@ $\nabla^2u+k^2u=0$
 ## 2 行波法
 
 $$\frac{\partial ^{2}u}{\partial t^{2}}-a^{2}\frac{\partial^{2 u}}{\partial x^{2}}=0, -\infty<x<\infty, t>0\\
-u(x,t)|_{t=0}=\phi(x),\frac{\partial u(x,t)}{\partial t}|_{t=0}
-$$
+u(x,t)|_{t=0}=\phi(x),\frac{\partial u(x,t)}{\partial t}|_{t=0}$$
 
 达朗贝尔解
 
