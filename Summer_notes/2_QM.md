@@ -58,3 +58,36 @@ $$D=\frac{k^{2}}{i \omega}=\frac{2m}{i \hbar}$$
 
 $$i\hbar\frac{\partial }{\partial t}\psi(x,t)=\left[-\frac{\hbar^{2}}{2m}\frac{\partial ^{2}}{\partial x^{2}}+V(x,t)\right]\psi(x,t)$$
 
+$$\implies i\hbar\frac{\partial }{\partial t}\ket{\psi}=\widehat{H}\ket{\psi}$$
+
+动量算符： $p_{x}\rightarrow \widehat{p_{x}}=i\hbar\frac{\partial}{\partial x}$
+
+概率密度守恒
+
+$$\frac{\partial }{\partial t}\rho(x,t)+\frac{\partial j(x,t)}{\partial x}=0$$
+
+波函数皆可表示为: $\psi(x,t)=\sqrt{\rho(x,t)}e^{\frac{1}{\hbar}S(x,t)}$
+
+$$\vec{j}(x,t)=\frac{\rho(x,t)}{m}\left(\vec{\nabla}S(x,t)\right)$$
+
+### 观测假设
+
+**物理可观测量=算符**
+
+实验观测值= $\braket{\psi|\vec{O}|\psi}=\braket{\vec{O}}$
+
+$$\int \psi^{\dagger}\vec{O}\psi dx,\braket{\vec{O}}\in \text{Re}, \text{iff} \quad\vec{O}^{\dagger}=\vec{O}$$
+
+
+> **经典仪器：遵从经典规律，可测量变化，可重复$\rightarrow$仪器测量体系状态，物理测量可重复性**
+
+## 算符
+
+$$\vec{A}^{\dagger}=\vec{A},\vec{A}\psi_{i}=a_{i}\phi_{i}\rightarrow \{\phi_{i}\}$$
+
+对易子：
+
+$$[\vec{A},\vec{B}]=\vec{A}\vec{B}-\vec{B}\vec{A}$$
+
+
+Little Group $_1SO_2/E_{2}$
