@@ -7,4 +7,5 @@
 \contentsline {subsection}{\numberline {1.2.1}Vector Space and Vector}{6}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Coordinate and basis}{7}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Tangent Vector}{7}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Dual Vector}{8}{subsection.1.2.4}%
 \contentsfinish 
