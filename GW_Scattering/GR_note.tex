@@ -8,6 +8,8 @@
 \usepackage{mathrsfs}
 \usepackage{fancyhdr}
 \usepackage{mathrsfs}
+\usepackage{empheq}
+\usepackage{dsserif}
 \usepackage{amssymb,amsmath,mathrsfs}    
 \geometry{
   a4paper,
@@ -153,7 +155,6 @@
 For this chapter, we would like to give a brief introduction to (General Relativity)GR's mathematical foundation. At the beginning of development of GR, researcher tried their hard to seek for a mathematical language to describe curved spacetime. Concepts in topology, including \textbf{manifolds}, are exposed to play a role in general relativity. Therefore, starting from fundamental mathematical concepts is much essential for us.
 
 \newpage
-
 
 \section{Manifold}
 Just think of a balloon, children always likes to blow up a balloon. We can observe the behavior of the balloon itself and find that it quietly looks like our universe in inflation. Obviously, if we want to describe surface of a balloon traditional Euclidean geometry is inconvenient for us. Also, people are used to looking at flat maps, because the earth is so large relative to us that we can almost think of the ground below us as a flat surface. Therefore, in order to describe the surface of the Earth, we can use many maps to approximate the local area, which can roughly meet our daily needs, and this idea of describing a curved surface (such as the Earth) corresponds to a very practical mathematical structure, the \textbf{manifold}. But we can't introduce manifold directly at this section, because we lack several concepts before defining manifolds. Then we start from the basic thing: \textbf{Topology}.
@@ -357,8 +358,26 @@ The above equation is called \textbf{Vector component transformation expression}
 \subsection{Dual Vector}
 
 
-We also need to introduce another kind of vector called \textbf{dual vector}. Since called "vector", it also satisfies such rules. However, what is different from normal vectors is that it constructs a kind of map from vectors to real numbers 
+We also need to introduce another kind of vector called \textbf{dual vector}. Since called "vector", it also has linearity and Leibniz law. However, what is different from normal vectors is that it constructs a kind of map from vectors to real numbers. Give an example, here we have a simple equation "\textbf{one} plus \textbf{two} equals three"
+\begin{align}
+    \mathbbb{1}+\mathbbb{2}=3\in \mathbb{R}\label{add}
+\end{align}
 
+Obviously, for single number, we can consider it as a "vector", and it satisfies the calculation rules of vector. Now we need "create" a new kind of number called "dual number" with an adder. That is to say, Eq. \ref{add} can be divided into two categories: "number" and "dual number". And dual number itself also has same Linearity and Leibniz law.
+And it has such calculation rule: acts on a number and get a real number. That is the key point of dual vector.
+
+\begin{align}
+    \underset{Dual Number}{\boxed{\mathbbb{1}+}}\;\underset{Number}{\mathbbb{2}}=3\in \mathbb{R}
+\end{align}
+
+We give the definition of dual vector space 
+
+\begin{tcolorbox}[title=\textbf{Dual Vector Space},colback=SeaGreen!10!CornflowerBlue!10,colframe=RoyalPurple!55!Aquamarine!100!]
+    The dual space is the space of all linear maps from the original vector space to the real numbers; in math lingo, if $\omega\in T_{p}^*$  is a dual vector, then it acts as a map such that
+    \begin{align}
+        \omega(aV+bW)=a\omega (V)+b\omega (W)\in \mathbb{R}
+    \end{align}
+\end{tcolorbox}
 
 
 \end{document}
