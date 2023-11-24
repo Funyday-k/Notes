@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  19 JUL 2023 19:56
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  24 NOV 2023 13:58
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/xialingyu/Documents/Notes/GW_Scattering/GR_note
@@ -766,7 +766,7 @@ File: t1zpltlf.fd 2021/05/25 v1.0 font definition file for T1/zpl/TLF
 )
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 142.
- (./GR_note.aux)
+ (./GR_note.aux (./GR_Chapter/Chapter1.aux) (./GR_Chapter/Chapter2.aux) (./GR_Chapter/Chapter3.aux))
 \openout1 = GR_note.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
@@ -899,7 +899,7 @@ LaTeX Info: Redefining \nameref on input line 142.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<cover.jpeg, id=83, 892.33376pt x 501.875pt>
+<cover.jpeg, id=91, 892.33376pt x 501.875pt>
 File: cover.jpeg Graphic file (type jpg)
 <use cover.jpeg>
 Package luatex.def Info: cover.jpeg  used on input line 145.
@@ -977,71 +977,102 @@ LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
 
 
 ]
+\openout2 = GR_Chapter/Chapter1.aux
+ (./GR_Chapter/Chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 153.
+(Font)              scaled to size 24.88pt on input line 5.
 [1
+
 
 
 ]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 159.
+(Font)              scaled to size 10.0pt on input line 11.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 159.
-LaTeX Font Info:    Trying to load font information for TS1+zplTLF on input line 179.
+(Font)              scaled to size 17.28pt on input line 11.
+LaTeX Font Info:    Trying to load font information for TS1+zplTLF on input line 31.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zplTLF
 )
 LaTeX Font Info:    Font shape `TS1/zplTLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 179.
+(Font)              scaled to size 12.0pt on input line 31.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 187.
+(Font)              scaled to size 10.95pt on input line 39.
  [2]
-<pic/earth.png, id=127, 722.7pt x 486.81876pt>
+<pic/earth.png, id=139, 722.7pt x 486.81876pt>
 File: pic/earth.png Graphic file (type png)
 <use pic/earth.png>
-Package luatex.def Info: pic/earth.png  used on input line 201.
+Package luatex.def Info: pic/earth.png  used on input line 53.
 (luatex.def)             Requested size: 170.71652pt x 114.99667pt.
-<pic/earths.png, id=128, 722.7pt x 422.57875pt>
+<pic/earths.png, id=140, 722.7pt x 422.57875pt>
 File: pic/earths.png Graphic file (type png)
 <use pic/earths.png>
-Package luatex.def Info: pic/earths.png  used on input line 209.
+Package luatex.def Info: pic/earths.png  used on input line 61.
 (luatex.def)             Requested size: 227.62204pt x 133.09366pt.
  [3<./pic/earth.png>]
-<pic/football.jpeg, id=136, 501.875pt x 501.875pt>
+<pic/football.jpeg, id=148, 501.875pt x 501.875pt>
 File: pic/football.jpeg Graphic file (type jpg)
 <use pic/football.jpeg>
-Package luatex.def Info: pic/football.jpeg  used on input line 221.
+Package luatex.def Info: pic/football.jpeg  used on input line 73.
 (luatex.def)             Requested size: 142.26378pt x 142.26239pt.
  [4<./pic/earths.png><./pic/football.jpeg>]
-<pic/circle.png, id=144, 441.65pt x 441.65pt>
+<pic/circle.png, id=156, 441.65pt x 441.65pt>
 File: pic/circle.png Graphic file (type png)
 <use pic/circle.png>
-Package luatex.def Info: pic/circle.png  used on input line 251.
+Package luatex.def Info: pic/circle.png  used on input line 103.
 (luatex.def)             Requested size: 170.71652pt x 170.71304pt.
  [5<./pic/circle.png>]
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 273.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 125.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [6] [7] [8] [9] (./GR_note.aux)
+) [6] [7]) [8] [9]
+\openout2 = GR_Chapter/Chapter2.aux
+ (./GR_Chapter/Chapter2.tex [10
+
+
+
+
+]
+Chapter 2.
+)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+]
+\openout2 = GR_Chapter/Chapter3.aux
+ (./GR_Chapter/Chapter3.tex
+warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
+[2
+
+
+
+
+]
+Chapter 3.
+)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1
+
+] (./GR_note.aux (./GR_Chapter/Chapter1.aux) (./GR_Chapter/Chapter2.aux) (./GR_Chapter/Chapter3.aux))
 Package rerunfilecheck Info: File `GR_note.out' has not changed.
-(rerunfilecheck)             Checksum: C2D299926037C0175CE9885BF075C809;1408.
+(rerunfilecheck)             Checksum: 8B41715D4B3B2DA2A95FBACC18CDF829;1885.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38512 strings out of 477785
+ 38674 strings out of 477785
  100000,1144653 words of node,token memory allocated
- 2291 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 2 glue, 136 kern, 1 glyph, 153 attribute, 63 glue_spec, 153 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 2:812,3:434,4:134,5:481,6:58,7:5188,8:46,9:545,10:13,11:353
- 57682 multiletter control sequences out of 65536+600000
- 130 fonts using 9418415 bytes
- 90i,16n,95p,1002b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 2318 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 2 glue, 137 kern, 1 glyph, 157 attribute, 63 glue_spec, 157 attribute_list, 4 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 2:807,3:432,4:150,5:480,6:62,7:5150,8:54,9:545,10:10,11:347
+ 57751 multiletter control sequences out of 65536+600000
+ 134 fonts using 9614415 bytes
+ 90i,16n,95p,1007b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/dsserif/DSSerif-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
-Output written on GR_note.pdf (11 pages, 767675 bytes).
+Output written on GR_note.pdf (15 pages, 769756 bytes).
 
-PDF statistics: 238 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 131072)
- 336 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 263 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 131072)
+ 352 words of extra memory for PDF output out of 10000 (max. 100000000)
 

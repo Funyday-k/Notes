@@ -8,4 +8,6 @@
 \contentsline {subsection}{\numberline {1.2.2}Coordinate and basis}{7}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Tangent Vector}{7}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Dual Vector}{8}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {2}Special Relativity and Classical Field Theory}{1}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Introduction to Curved World}{1}{chapter.3}%
 \contentsfinish 
