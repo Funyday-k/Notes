@@ -1,5 +1,34 @@
 \mainmatter
 \pagenumbering{arabic}
 \chapter{Decay Rate \& Cross Sections}
+\hypersetup{linktoc=all, linkcolor=RoyalBlue, urlcolor=winered}
 
 \section{Fermi Golden Rule}
+
+Consider time-dependent Schrödinger equation,
+\begin{align}
+    i\frac{d \psi}{d t}=\hat{H}(t)\psi.\label{eq:Schrödinger}
+\end{align}
+We can separate Hamiltonian operator into two parts, one is time-independent, and else is time-dependent,
+\begin{align}
+    \hat{H}(t)=\hat{H}_{0}+\hat{H^{\prime}}(\mathrm{x},t)
+\end{align}
+For time-independent part we can use common method to solve it,
+\begin{align}
+    \hat{H}_{0}\psi_{k}=E_{k}\psi_{k},\quad \text{and} \quad \braket{\psi_{j}}{\psi_{k}}=\delta_{jk}
+\end{align}
+Then the wavefunction can be expressed in terms of complete set of states of the unperturbed Hamiltonian as
+\begin{align}
+    \psi(\mathrm{x},t)=\sum_{k}c_{k}(t)\psi(\mathrm{x})e^{-i E_{k}t}.\label{eq:set}
+\end{align}
+
+Then we can substitute Eq. \ref{eq:set} into Eq. \ref{eq:Schrödinger}, we can get 
+\begin{align}
+    i \sum_k\left[\frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t}-i E_k c_k \psi_k e^{-i E_k t}\right] & =\sum_k c_k \hat{H}_0 \psi_k e^{-i E_k t}+\sum_k \hat{H}^{\prime} c_k \psi_k e^{-i E_k t} \notag\\
+    \Rightarrow \quad i \sum_k \frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t} & =\sum_k \hat{H}^{\prime} c_k(t) \psi_k e^{-i E_k t}
+\end{align}
+Suppose the initial state is $i$ for $\psi_{i}\equiv \ket{i}$, that is 
+\begin{align}
+    \psi(\mathrm{x},0)=\sum_{k}c_{k}(0)\psi_{k}=c_{i}(0)\psi_{i}.
+\end{align}
+We can easily imply that $c_{k}=\delta_{ik}$. Assume that time-dependent Hamiltonian is perturbed, which implies $c_{i\neq k}\ll 1, c_{i}\sim 1$
