@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  20 DEC 2023 14:43
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  20 DEC 2023 15:35
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/xialingyu/Documents/Notes/Particle_Physics/particle
@@ -1009,19 +1009,19 @@ Package rerunfilecheck Info: File `particle.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38359 strings out of 477785
+ 38388 strings out of 477785
  100000,1144653 words of node,token memory allocated
- 1807 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 2 glue, 12 kern, 56 sub_mlist, 1 glyph, 145 attribute, 63 glue_spec, 145 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 2:969,3:159,4:70,5:570,6:37,7:3891,8:91,9:1431,10:4,11:132
- 57562 multiletter control sequences out of 65536+600000
- 125 fonts using 9232031 bytes
+ 1947 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 2 glue, 16 kern, 72 sub_mlist, 1 glyph, 163 attribute, 63 glue_spec, 163 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 2:933,3:163,4:70,5:564,6:37,7:3891,8:91,9:1431,10:4,11:134
+ 57567 multiletter control sequences out of 65536+600000
+ 145 fonts using 10467423 bytes
  90i,15n,95p,517b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
-Output written on particle.pdf (6 pages, 438885 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
+Output written on particle.pdf (6 pages, 449667 bytes).
 
-PDF statistics: 173 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 131072)
+PDF statistics: 183 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 131072)
  296 words of extra memory for PDF output out of 10000 (max. 100000000)
 

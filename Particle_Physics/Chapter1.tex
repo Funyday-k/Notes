@@ -42,7 +42,7 @@ Then we need to get to final state, so we can use relation of inner product, let
 \end{align}
 where $\matrixel{f}{\hat{H'}}{i}\equiv T_{fi}$ is \textbf{transition matrix element}, can be calculated by
 \begin{align}
-    \matrixel{f}{\hat{H'}}{i}=\int_{V}\psi^{\dagger}_{f}(\mathrm{x})\hat{H'}\psi_{i}(\mathrm{x})\dd[3]{\mathrm{x}}.
+    \matrixel{f}{\hat{H'}}{i}=\int_{V}\psi^{*}_{f}(\mathrm{x})\hat{H'}\psi_{i}(\mathrm{x})\dd[3]{\mathrm{x}}.
 \end{align}
 Then we can calculate the coefficient $c_{f}$, at time $t=T$
 \begin{align}
@@ -51,7 +51,7 @@ Then we can calculate the coefficient $c_{f}$, at time $t=T$
 
 The probability for a transition to the state $\ket{f}$ is given by
 \begin{align}
-    P_{if}=c_{f}^{\dagger}(t)c_{f}(t)=\abs{T_{fi}}^{2}\int^{T}_0\int^{T}_0 e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
+    P_{if}=c_{f}^{*}(t)c_{f}(t)=\abs{T_{fi}}^{2}\int^{T}_0\int^{T}_0 e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
 \end{align}
 
 And we have \textbf{transition rate} $\dd{\Gamma_{fi}}$ from the initial state $\ket{i}$ to the single final state $\ket{f}$ 
@@ -59,7 +59,7 @@ And we have \textbf{transition rate} $\dd{\Gamma_{fi}}$ from the initial state $
     \dd{\Gamma_{fi}}=\frac{P_{fi}}{T}=\frac{1}{T}\abs{T_{fi}}^{2}\int^{\frac{T}{2}}_{-\frac{T}{2}}\int^{\frac{T}{2}}_{-\frac{T}{2}} e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
 \end{align}
 
-If we consider the time is long enough comparing to transition progress, we can take a limit,
+If we consider the time is long enough comparing to transition process, we can take a limit,
 \begin{align}
     \mathrm{d} \Gamma_{f i}=\left|T_{f i}\right|^2 \lim _{T \rightarrow \infty}\left\{\frac{1}{T} \int_{-\frac{T}{2}}^{+\frac{T}{2}} \int_{-\frac{T}{2}}^{+\frac{T}{2}} e^{i\left(E_f-E_i\right) t} e^{-i\left(E_f-E_i\right) t^{\prime}} \mathrm{d} t \mathrm{~d} t^{\prime}\right\}.
 \end{align}
@@ -92,6 +92,20 @@ For second order of transition matrix element, we have
 
 \section{Decay Rate}
 
+Fermi's golden rule can be written as an alternative forma
+\begin{align}
+    \Gamma_{fi}=2\pi\int\abs{T_{fi}}^{2}\delta(E_{i}-E)\dd{n}
+\end{align}
 
+Firstly consider the decay rate for the process $a\rightarrow 1+2$ in non-relativistic situation, related Fermi's golden rule, we write transition matrix element 
+\begin{align}
+    T_{fi}&=\matrixel{\psi_{1}\psi_{2}}{\hat{H'}}{\psi_{a}}\\
+    &=\int_{V}\psi^{*}_1 \psi^{*}_2\hat{H'}\psi_{a}\dd[3]{x}
+\end{align}
+
+In the Born approximation, the perturbation is taken to be small and the initial- and final-state particles are represented by plane waves of the form
+\begin{align}
+    \psi(\mathrm{x},t)=Ae^{i(\mathbf{p}\cdot )}
+\end{align}
 
 \section{Cross Sections}
