@@ -1,6 +1,6 @@
 \contentsline {chapter}{\numberline {1}Decay Rate \& Cross Sections}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Fermi Golden Rule}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Decay Rate}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Cross Sections}{2}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Klein-Gordon Equation}{3}{chapter.2}%
+\contentsline {section}{\numberline {1.2}Decay Rate}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Cross Sections}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Klein-Gordon Equation}{4}{chapter.2}%
 \contentsfinish 

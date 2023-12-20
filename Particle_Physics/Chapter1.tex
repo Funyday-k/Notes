@@ -38,7 +38,7 @@ We can easily imply that $c_{k}=\delta_{ik}$. Assume that time-dependent Hamilto
 
 Then we need to get to final state, so we can use relation of inner product, let $\bra{f}$ act on Eq. \ref{eq:perturbed}, we can get the coefficient $c_{f}$
 \begin{align}
-    \frac{d c_{f}}{dt}=-i\matrixel{f}{\hat{H'}}{i}e^{-i(E_{i}-E_{f})t},
+    \frac{d c_{f}}{dt}=-i\matrixel{f}{\hat{H'}}{i}e^{-i(E_{i}-E_{f})t},\label{eq:one_order}
 \end{align}
 where $\matrixel{f}{\hat{H'}}{i}\equiv T_{fi}$ is \textbf{transition matrix element}, can be calculated by
 \begin{align}
@@ -56,21 +56,42 @@ The probability for a transition to the state $\ket{f}$ is given by
 
 And we have \textbf{transition rate} $\dd{\Gamma_{fi}}$ from the initial state $\ket{i}$ to the single final state $\ket{f}$ 
 \begin{align}
-    \dd{\Gamma_{fi}}=\frac{P_{fi}}{T}=\frac{1}{T}\abs{T_{fi}}^{2}\int^{T/2}_{-T/2}\int^{T/2}_{-T/2} e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
+    \dd{\Gamma_{fi}}=\frac{P_{fi}}{T}=\frac{1}{T}\abs{T_{fi}}^{2}\int^{\frac{T}{2}}_{-\frac{T}{2}}\int^{\frac{T}{2}}_{-\frac{T}{2}} e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
 \end{align}
 
-If we consider the time is long enough comparing to transition progress, we can take a limit
+If we consider the time is long enough comparing to transition progress, we can take a limit,
 \begin{align}
-    \mathrm{d} \Gamma_{f i}=\left|T_{f i}\right|^2 \lim _{T \rightarrow \infty}\left\{\frac{1}{T} \int_{-\frac{T}{2}}^{+\frac{T}{2}} \int_{-\frac{T}{2}}^{+\frac{T}{2}} e^{i\left(E_f-E_i\right) t} e^{-i\left(E_f-E_i\right) t^{\prime}} \mathrm{d} t \mathrm{~d} t^{\prime}\right\}
+    \mathrm{d} \Gamma_{f i}=\left|T_{f i}\right|^2 \lim _{T \rightarrow \infty}\left\{\frac{1}{T} \int_{-\frac{T}{2}}^{+\frac{T}{2}} \int_{-\frac{T}{2}}^{+\frac{T}{2}} e^{i\left(E_f-E_i\right) t} e^{-i\left(E_f-E_i\right) t^{\prime}} \mathrm{d} t \mathrm{~d} t^{\prime}\right\}.
 \end{align}
 Associated with the definition of Dirac delta-function, the integral over $\dd t'$ can be replaced by $2\pi \delta(E_{f} -E_{i})$ and thus
 \begin{align}
-    \mathrm{d} \Gamma_{f i}=2 \pi\left|T_{f i}\right|^2 \lim _{T \rightarrow \infty}\left\{\frac{1}{T} \int_{-\frac{T}{2}}^{+\frac{T}{2}} e^{i\left(E_f-E_i\right) t} \delta\left(E_f-E_i\right) \mathrm{d} t\right\}
+    \Gamma_{f i}  =2 \pi\left|T_{f i}\right|^2\left|\frac{\mathrm{d} n}{\mathrm{~d} E_f}\right|_{E_i},
+\end{align}
+where $\left|\frac{\mathrm{d} n}{\mathrm{~d} E_f}\right|_{E_i}$ is called \textbf{density of states}, it can be also written as 
+\begin{align}
+    \rho(E_{i})=\left|\frac{\mathrm{d} n}{\mathrm{~d} E_f}\right|_{E_i}
 \end{align}
 
+\textbf{Fermi's golden rule} for the total transition rate is therefore
+\begin{align}
+    \Gamma_{fi}=2\pi \left|T_{f i}\right|^2 \rho(E_{i})
+\end{align}
 
-
+However, we take assumption $c_{i\neq f}(t)\approx 0$, if we need to get more precise information, we should expand more terms of transition matrix element, we start from Eq. \ref{eq:one_order}
+\begin{align}
+    \frac{\mathrm{d} c_f}{\mathrm{~d} t} \approx-i\langle f|\hat{H}| i\rangle e^{i\left(E_f-E_i\right) t}+(-i)^2 \sum_{k \neq i}\left\langle f\left|\hat{H}^{\prime}\right| k\right\rangle e^{i\left(E_f-E_k\right) t} \int_0^t\left\langle k\left|\hat{H}^{\prime}\right| i\right\rangle e^{i\left(E_k-E_i\right) t^{\prime}} \mathrm{d} t^{\prime}
+\end{align}
+Therefore, the improved approximation for the evolution of the coefficients $c_{f}(t)$ is given by
+\begin{align}
+    \frac{\mathrm{d} c_f}{\mathrm{~d} t}=-i\left(\langle f|\hat{H}| i\rangle+\sum_{k \neq i} \frac{\left\langle f\left|\hat{H}^{\prime}\right| k\right\rangle\left\langle k\left|\hat{H}^{\prime}\right| i\right\rangle}{E_i-E_k}\right) e^{i\left(E_f-E_i\right) t}.
+\end{align}
+For second order of transition matrix element, we have 
+\begin{align}
+    T_{fi}=\matrixel{f}{\hat{H}}{i}+\sum_{k \neq i} \frac{\left\langle f\left|\hat{H}^{\prime}\right| k\right\rangle\left\langle k\left|\hat{H}^{\prime}\right| i\right\rangle}{E_i-E_k}
+\end{align}
 
 \section{Decay Rate}
+
+
 
 \section{Cross Sections}
