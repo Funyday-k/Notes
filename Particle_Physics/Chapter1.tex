@@ -1,7 +1,7 @@
 \mainmatter
 \pagenumbering{arabic}
 \chapter{Decay Rate \& Cross Sections}
-\hypersetup{linktoc=all, linkcolor=RoyalBlue, urlcolor=winered}
+
 
 \section{Fermi Golden Rule}
 
@@ -19,16 +19,39 @@ For time-independent part we can use common method to solve it,
 \end{align}
 Then the wavefunction can be expressed in terms of complete set of states of the unperturbed Hamiltonian as
 \begin{align}
-    \psi(\mathrm{x},t)=\sum_{k}c_{k}(t)\psi(\mathrm{x})e^{-i E_{k}t}.\label{eq:set}
+    \psi(\mathrm{x},t)=\sum_{k}c_{k}(t)\psi(\mathrm{x})e^{-i E_{k}t}.\label{eq:set1}
 \end{align}
 
-Then we can substitute Eq. \ref{eq:set} into Eq. \ref{eq:Schrödinger}, we can get 
+Then we can substitute Eq. \ref{eq:set1} into Eq. \ref{eq:Schrödinger}, we can get 
 \begin{align}
     i \sum_k\left[\frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t}-i E_k c_k \psi_k e^{-i E_k t}\right] & =\sum_k c_k \hat{H}_0 \psi_k e^{-i E_k t}+\sum_k \hat{H}^{\prime} c_k \psi_k e^{-i E_k t} \notag\\
-    \Rightarrow \quad i \sum_k \frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t} & =\sum_k \hat{H}^{\prime} c_k(t) \psi_k e^{-i E_k t}
+    \Rightarrow \quad i \sum_k \frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t} & =\sum_k \hat{H}^{\prime} c_k(t) \psi_k e^{-i E_k t}\label{eq:set2}
 \end{align}
 Suppose the initial state is $i$ for $\psi_{i}\equiv \ket{i}$, that is 
 \begin{align}
     \psi(\mathrm{x},0)=\sum_{k}c_{k}(0)\psi_{k}=c_{i}(0)\psi_{i}.
 \end{align}
-We can easily imply that $c_{k}=\delta_{ik}$. Assume that time-dependent Hamiltonian is perturbed, which implies $c_{i\neq k}\ll 1, c_{i}\sim 1$
+We can easily imply that $c_{k}=\delta_{ik}$. Assume that time-dependent Hamiltonian is perturbed, which implies $c_{i\neq k}\ll 1, c_{i}\sim 1$. And Eq. \ref{eq:set2} can reduce to 
+\begin{align}
+    i \sum_k \frac{\mathrm{d} c_k}{\mathrm{~d} t} \ket{k} e^{-i E_k t} \approx \hat{H}^{\prime} \ket{i} e^{-i E_i t}\label{eq:perturbed}
+\end{align}
+
+Then we need to get to final state, so we can use relation of inner product, let $\bra{f}$ act on Eq. \ref{eq:perturbed}, we can get the coefficient $c_{f}$
+\begin{align}
+    \frac{d c_{f}}{dt}=-i\matrixel{f}{\hat{H'}}{i}e^{-i(E_{i}-E_{f})t},
+\end{align}
+where $\matrixel{f}{\hat{H'}}{i}\equiv T_{fi}$ is \textbf{transition matrix element}, can be calculated by
+\begin{align}
+    \matrixel{f}{\hat{H'}}{i}=\int_{V}\psi^{\dagger}_{f}(\mathrm{x})\hat{H'}\psi_{i}(\mathrm{x})\dd[3]{\mathrm{x}}.
+\end{align}
+
+The probability for a transition to the state $\ket{f}$ is given by
+\begin{align}
+    P_{if}=c_{f}^{\dagger}(t)c_{f}(t)
+\end{align}
+
+
+
+\section{Decay Rate}
+
+\section{Cross Sections}

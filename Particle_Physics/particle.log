@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  19 DEC 2023 21:22
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.7.27)  20 DEC 2023 13:21
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/xialingyu/Documents/Notes/Particle_Physics/particle
@@ -899,7 +899,7 @@ LaTeX Info: Redefining \nameref on input line 142.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<cover.jpg, id=51, 1445.4pt x 563.706pt>
+<cover.jpg, id=63, 1445.4pt x 563.706pt>
 File: cover.jpg Graphic file (type jpg)
 <use cover.jpg>
 Package luatex.def Info: cover.jpg  used on input line 145.
@@ -993,28 +993,35 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 19.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 19.
-) [1
+[1
 
+
+]) (./Chapter2.tex
+LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 1.
+ [2]
+Chapter 2.
+) [3
 
 ] (./particle.aux)
 Package rerunfilecheck Info: File `particle.out' has not changed.
-(rerunfilecheck)             Checksum: 6870B6308DEF8CDC8A952D8AD20108CD;338.
+(rerunfilecheck)             Checksum: 8EFA80E2842748EDEF1B498730D85C3C;723.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38324 strings out of 477785
+ 38348 strings out of 477785
  100000,1144653 words of node,token memory allocated
- 1375 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 2 glue, 8 kern, 1 glyph, 84 attribute, 63 glue_spec, 84 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 2:641,3:178,4:40,5:343,6:36,7:2408,8:39,9:752,10:4,11:74
- 57553 multiletter control sequences out of 65536+600000
- 124 fonts using 9149471 bytes
- 90i,12n,95p,517b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 1659 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 2 glue, 8 kern, 40 sub_mlist, 1 glyph, 125 attribute, 63 glue_spec, 125 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
+   avail lists: 2:627,3:141,4:70,5:351,6:37,7:2359,8:43,9:796,10:4,11:67
+ 57561 multiletter control sequences out of 65536+600000
+ 125 fonts using 9232031 bytes
+ 90i,15n,95p,517b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
-Output written on particle.pdf (3 pages, 412727 bytes).
+Output written on particle.pdf (5 pages, 424433 bytes).
 
-PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 131072)
- 272 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 158 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 131072)
+ 296 words of extra memory for PDF output out of 10000 (max. 100000000)
 
