@@ -94,7 +94,7 @@ For second order of transition matrix element, we have
 
 Fermi's golden rule can be written as an alternative forma
 \begin{align}
-    \Gamma_{fi}=2\pi\int\abs{T_{fi}}^{2}\delta(E_{i}-E)\dd{n}
+    \Gamma_{fi}=2\pi\int\abs{T_{fi}}^{2}\delta(E_{i}-E)\dd{n}\label{eq:fermi2}
 \end{align}
 
 Firstly consider the decay rate for the process $a\rightarrow 1+2$ in non-relativistic situation, related Fermi's golden rule, we write transition matrix element 
@@ -105,7 +105,50 @@ Firstly consider the decay rate for the process $a\rightarrow 1+2$ in non-relati
 
 In the Born approximation, the perturbation is taken to be small and the initial- and final-state particles are represented by plane waves of the form
 \begin{align}
-    \psi(\mathrm{x},t)=Ae^{i(\mathbf{p}\cdot )}
+    \psi(\mathrm{x},t)=Ae^{i(\mathbf{p}\cdot \mathrm{x}-Et)},
+\end{align}
+where $A^{2}=\frac{1}{V}$ determines wavefunction normalization. We use such condition
+\begin{align}
+    \psi(x+a,y,z)=\psi(x,y,z),\quad \text{etc.},
+\end{align}
+The periodic boundary conditions on the wavefunction imply that the components of momentum are quantised to
+\begin{align}
+    (p_{x},p_{y},p_{z})=(n_{x},n_{y},n_{z})\frac{2\pi}{a}
 \end{align}
 
-\section{Cross Sections}
+Therefore, we can get the density of states,
+\begin{align}
+    \dd{n}=\dd{V(p)}\frac{V}{(2\pi)^{3}}=4\pi p^{2}\dd{p}\frac{V}{(2\pi)^{3}}
+\end{align}
+The density of states in Fermi’s golden rule then can be obtained from
+\begin{align}
+    \rho(E)=\frac{\dd{n}}{\dd{E}}=\frac{\dd{n}}{\dd{p}}\abs{\frac{\dd{p}}{\dd{E}}}
+\end{align}
+
+\subsection{Lorentz-invariant Form}
+
+To keep wavefunction normalized, a unit volume should decrease with particle energy $E=\gamma m$ increasing. For convenience, we usually take $2E$ as normalization volume
+\begin{align}
+    \int_{V}\psi'^{*}\psi'\dd[3]{x}=2E,
+\end{align}
+and therefore
+\begin{align}
+    \psi'=\sqrt{2E}\psi
+\end{align}
+
+Therefore, we can get Lorentz-invariant form of transition matrix element
+\begin{align}
+    \mathcal{M}_{fi}=\matrixel{\psi'_{1}\psi'_{2}\cdots }{\hat{H'}}{\psi'_{a}\psi'_{b}\cdots }=\sqrt{2E_{1}\cdot 2E_{2}\cdot \cdots 2E_{a}\cdot 2E_{b}\cdots }T_{fi}
+\end{align}
+
+We go back to Fermi's golden rule. Combining with Eq. \ref{eq:fermi2}, we can get 
+\begin{align}
+    \Gamma_{f i}=\frac{(2 \pi)^4}{2 E_a} \int\left|\mathcal{M}_{f i}\right|^2 \delta\left(E_a-E_1-E_2\right) \delta^3\left(\mathbf{p}_a-\mathbf{p}_1-\mathbf{p}_2\right) \frac{\mathrm{d}^3 \mathbf{p}_1}{(2 \pi)^3 2 E_1} \frac{\mathrm{d}^3 \mathbf{p}_2}{(2 \pi)^3 2 E_2}.
+\end{align}
+It should be noticed that $\frac{\dd[3]{\mathbf{p_{i}}}}{E_{i}}$ is Lorentz-invariant.
+
+
+
+
+
+\section{Cross-Sections}
