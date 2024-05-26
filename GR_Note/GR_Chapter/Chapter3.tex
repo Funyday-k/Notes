@@ -38,3 +38,71 @@ A light wave at frequency $\nu$, $\nu \varpropto \Delta \tau^{-1}$. If light is 
 
 \section{Mathematical description of curved space-time}
 
+$\Delta \tau_{A} \neq \Delta \tau_{B} \implies $ space-time is curved in the presence of gravity. 
+
+For equivalence principle: in a small enough region of space-time, the laws of physics are the same as in S.R.. Freely falling coordinate system :$\phi^{\alpha}$
+
+The proper time: 
+\begin{align}
+    d\tau^{2}=-\frac{1}{c^{2}}\eta_{\alpha \beta}\dd{\xi^{\alpha}} \dd{\xi^{\beta}}
+\end{align}
+
+Freely falling particle:
+\begin{align}
+    \frac{\dd{U^{\alpha}}}{\dd{\tau}}=\frac{\dd[2]{\xi^{\alpha}}}{\dd{\tau}^{2}}=0
+\end{align}
+
+Express the proper time in arbitrary coordinate system $x^{\mu}$, for chain rule
+\begin{align}
+    \dd\tau^{2}&=-\frac{1}{c^{2}}\eta_{\alpha \beta}\left(\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\right)\dd{x^{\mu}} \left(\frac{\partial \xi^{\beta}}{\partial x^{\nu}}\right)\dd{x^{\nu}}\\
+    &=-\frac{1}{c^{2}}\equiv \eta_{\alpha\beta}\left(\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\right)\left(\frac{\partial \xi^{\beta}}{\partial x^{\nu}}\right)
+\end{align}
+
+Then we can define the metric for arbitrary coordinate system:
+\begin{align}
+    g_{\mu\nu}\equiv \eta_{\mu\nu}\left(\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\right)\left(\frac{\partial \xi^{\beta}}{\partial x^{\nu}}\right)
+\end{align}
+
+In arbitrary coordinate system, a free-falling particle does same accelerate,
+\begin{align}
+    0&=\frac{\dd{U^{\alpha}}}{\dd{\tau}}=\frac{\dd}{\dd\tau}\left(\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\frac{\partial x^{\mu}}{\partial \tau}\right)\\
+    0&=\left[\left(\frac{\partial ^{2}\xi^{\alpha}}{\partial x^{\mu}\partial x^{\nu}}\right)\left(\frac{\dd x^{\nu}}{\dd \tau}\right)\right]\frac{\dd x^{\mu}}{\dd\tau}+\left(\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\right)\left(\frac{\dd[2]{x^{\mu}}}{\dd\tau^{2}}\right)\\
+    0&=\frac{\dd[2]{x^{\lambda}}}{\dd\tau}+\Gamma^{\lambda}_{\mu\nu}\frac{\dd{x^{\mu}}}{\dd\tau}\frac{x^{\nu}}{\dd\tau},
+\end{align}
+where $\Gamma^{\lambda}_{\mu\nu}$ is called \textbf{Affine connection}
+\begin{align}
+    \Gamma^{\lambda}_{\mu\nu}\equiv \frac{\partial x^{\lambda}}{\partial \xi^{\alpha}}\frac{\partial^{2}\xi^{\alpha}}{\partial x^{\mu}\partial ^{\nu}}
+\end{align}
+
+Then we can get \textbf{geodesic equation}
+
+\begin{align}
+    \frac{\dd U^{\lambda}}{\dd\tau}=-\Gamma^{\lambda}_{\mu\nu} U^{\mu}U^{\nu}
+\end{align}
+
+Then we want to find the connection between the Affine connection and the metric tensor
+
+\begin{align}
+    \frac{\partial g_{\mu\nu}}{\partial x^{\mu}}=\frac{\partial ^{2}\xi^{\alpha}}{\partial x^{\mu}\partial x^{\nu}}\eta_{\alpha\beta}+\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\frac{\partial^{2}\xi^{\beta}}{\partial x^{\nu}\partial x^{\lambda}}\eta_{\alpha \beta}
+\end{align}
+use $\frac{\partial^{2} \xi ^{\beta}}{\partial x^{\nu}\partial x^{\lambda}}=\Gamma^{\rho}_{\nu\lambda}\frac{\partial \xi^{\beta}}{\partial x^{\rho}}$
+ 
+\begin{align}
+    \frac{\partial g_{\mu\nu}}{\partial x^{\lambda}}=\Gamma^{\rho}_{\mu\lambda}\frac{\partial \xi^{\alpha}}{\partial x^{\rho}}\frac{\partial \xi^{\beta}}{\partial x^{\nu}}\eta_{\alpha\beta}+\Gamma^{\rho}_{\nu\lambda}\frac{\partial \xi^{\alpha}}{\partial x^{\mu}}\frac{\partial \xi^{\beta}}{\partial x^{\rho}}\eta_{\alpha \beta}=\Gamma^{\rho}_{\lambda\mu}g_{\rho\nu}+\Gamma^{\rho}_{\lambda\nu}g_{\rho\mu}
+\end{align}
+
+Integrate them, we can get the expression of Affine connection in terms of metric
+\begin{align}
+    \Gamma^{\sigma}_{\lambda\mu}=\frac{1}{2}g^{\nu \sigma}\left(\frac{\partial g_{\mu\nu}}{\partial x^{\lambda}}+\frac{\partial g_{\lambda \nu}}{\partial x^{\mu}}-\frac{\partial g_{\mu\lambda}}{\partial x^{\nu}}\right)
+\end{align}
+
+\bbox{Example in 2d flat space in $(r,\theta)$ coordinate}{
+    \begin{align}
+        &g_{\mu\nu}=\begin{pmatrix}
+        1 & 0\\
+        0 & r^{2}
+        \end{pmatrix}\\
+        &\Gamma^{r}_{\theta\theta}=-r\\
+        &\Gamma^{\theta}_{r\theta}=\Gamma^{\theta}_{\theta r}=\frac{1}{r}
+    \end{align}
+}
