@@ -1,0 +1,1 @@
+{"rule":"CROSS_COMPOUNDS","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q The equation of differential scattering cross section can be obtained because the continuity conditional probability is equal \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}

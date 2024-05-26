@@ -1,2 +1,2 @@
 # Notes
-This my note of physics
+This is my study notes.

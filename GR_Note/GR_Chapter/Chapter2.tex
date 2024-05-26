@@ -1,0 +1,190 @@
+\newpage
+
+\mainmatter
+\pagenumbering{arabic}
+\chapter{Special Relativity and Classical Field Theory}
+
+\section{Review of Special Relativity}
+
+\subsection{Transformation}
+
+If we have two frames of space $\mathcal{O} $ and $\mathcal{O} ^{'}$ with velocity $v$ and $u$ respectively, we want to change frame from $\mathcal{O}$ to $\mathcal{O}'$. How can we do it? For classical physics, we usually use Galilee Transformation:
+\begin{align}
+    \vec{u}'=\vec{u}+\vec{v}
+\end{align}
+
+But we also have to face some questions from new phenomena
+
+\begin{itemize}
+    \item What is an initial frame?
+    \item It should be tested in high speed situation ($v\sim c$)
+\end{itemize}
+
+But for Lorentz transformation:
+
+\begin{align}
+    -(\delta \tau)^{2}=-(\delta t)^{2}+\frac{(\delta l)^{2}}{c^{2}}
+\end{align}
+
+
+\subsection{Physics in flat space: Special Relativity}
+
+\begin{tcolorbox}[title=\textbf{Special Relativity},colback=SeaGreen!10!CornflowerBlue!10,colframe=RoyalPurple!55!Aquamarine!100!]
+    The laws of nature are invariant in all inertial reference frames.
+
+    Speed of light $c$ is constant.
+\end{tcolorbox}
+
+
+\bbox{Spacetime interval}{
+    \begin{align}
+        (\text{Interval})^{2}=(\delta s)^{2}=x^{2}+y^{2}+z^{2}-c^{2}t^{2}
+    \end{align}
+}
+
+We introduce the four dimensional coordinate $x^{\mu}$
+
+\begin{align}
+    x^{\mu}=\begin{pmatrix}
+    x^{0}\\
+    x^{1}\\
+    x^{2}\\
+    x^{3}
+    \end{pmatrix}=\begin{pmatrix}
+    ct\\
+    x\\
+    y\\
+    z
+    \end{pmatrix}=\begin{pmatrix}
+    ct\\
+    x^{i}
+    \end{pmatrix}
+\end{align}
+
+And metric is defined by
+
+\begin{align}
+    \eta_{\mu \nu}=\begin{pmatrix}
+    -1 &  &  & \\
+     & 1 &  & \\
+     &  & 1 & \\
+     &  &  & 1
+    \end{pmatrix}_{GR}=-(\eta_{\mu\nu})_{QFT}
+\end{align}
+
+So the interval can be calculated by a metric and two four dimensional vectors
+
+\begin{align}
+    \Delta s^{2}=\begin{pmatrix}
+    x^{0} &x^{1}  &x^{2}  &x^{3} 
+    \end{pmatrix} \begin{pmatrix}
+    -1 &  &  & \\
+     & 1 &  & \\
+     &  & 1 & \\
+     &  &  & 1
+    \end{pmatrix} \begin{pmatrix}
+    x^{0}\\
+    x^{1}\\
+    x^{2}\\
+    x^{3}
+    \end{pmatrix}=\sum_{i=0}^{3}\eta_{\mu\nu}x^{\mu}x^{\nu}=x^{2}+y^{2}+z^{2}-c^{2}t^{2}
+\end{align}
+
+What are all the transformation which conserve the interval. For spatial rotations
+
+\begin{align}
+    R_{x}=\begin{pmatrix}
+    1 &  &  & \\
+     &  1&  & \\
+     &  & \cos\theta &\sin \theta \\
+     &  & \sin\theta &\cos\theta 
+    \end{pmatrix}
+\end{align}
+
+But for Lorentz transformation, which is called "boost"
+
+\begin{align}
+    &x^{\mu'}=\Lambda^{\mu'}_{\nu}x^{\nu}\\
+    &\Lambda^{\mu'}_\nu=\begin{pmatrix}
+    \cosh \omega & -\sinh \omega &  & \\
+    -\sinh \omega &\sinh \omega  &  & \\
+     &  & 1 & \\
+     &  &  & 1
+    \end{pmatrix}
+\end{align}
+
+So we can prove that interval is Lorentz invariant:
+\begin{align}
+    \begin{aligned}
+        \Delta s^{2}&=\eta_{\mu\nu}'\Delta x^{\mu'}x^{\nu'}\\
+        &=\eta_{\mu\nu}'\Lambda^{\mu'}_\sigma \Delta x^{\sigma}\Lambda^{\nu'}_{\kappa} \Delta x^{\kappa}\\
+        &=\eta_{\sigma \kappa}\Delta x^{\sigma}\Delta x^{\kappa}
+    \end{aligned}
+\end{align}
+
+For two definitions which are covariant vectors and contravariant vectors are
+\begin{itemize}
+    \item Covariant vector: transformed as basis.
+    \item Contravariant vector: transformed opposite to the basis like: $x^{\mu}, p^{\mu}$.
+\end{itemize} 
+
+\bbox{Proper time $\tau$}{The time as measured by an observer comoving with the clock. That doesn't see the clock moving with respect to it.}
+
+
+\begin{align}
+    \eta_{\mu\nu} V^{\mu}V^{\nu}=\begin{cases}
+        <0,\; \text{timelike}\\
+        =0,\; \text{null/lightlike}\\
+        >0,\; \text{spcaelike}
+    \end{cases}
+\end{align}
+
+
+\subsection{Special Relativity Kinematics}
+
+\subsection{Maxwell Equation}
+
+We have learned that Maxwell equations before
+
+\begin{align}
+    \begin{aligned}
+        \nabla \cdot E &=\frac{\rho}{\epsilon_{0}}\\
+        \nabla\cdot B&=0\\
+        \nabla \times E&=-\frac{\partial B}{\partial t}\\
+        \nabla \times B&=\mu_{0}j+\mu_{0}\epsilon_{0}\frac{\partial E}{\partial t}
+    \end{aligned}
+\end{align}
+
+Use Einstein convention, we can express
+
+\begin{align}
+    \begin{aligned}
+        \epsilon^{ijk}\partial_{i}B_{k}-\partial_{0}E^{i}&=4\pi J^{i}\\
+        \partial_{i}E^{i}&=4\pi J^{0}\\
+        \epsilon^{ijk}\partial_{j}E_{k}+\partial_{0}B^{i}&=0\\
+        \partial_{i}B^{i}&=0
+    \end{aligned}
+\end{align}
+
+Then we try to construct electromagnetic field tensor
+
+\begin{align}
+    F^{\mu\nu}=\begin{pmatrix}
+    0 & -E_{1} &-E_{2}  &-E_{3} \\
+    E_{1} & 0 & B_{3} & -B_{2}\\
+    E_{2} & -B_{3} &  0& B_{1}\\
+    E_{3} & B_{2} & -B_{1} &0 
+    \end{pmatrix}=-F_{\mu\nu}
+\end{align}
+
+From components, we have 
+
+\begin{align}
+    \partial_{\nu}F^{\mu\nu}=4\pi J^{\mu}
+\end{align}
+
+\section{Classical Field Theory}
+
+
+
+

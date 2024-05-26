@@ -1,0 +1,175 @@
+\mainmatter
+\pagenumbering{arabic}
+\chapter{Decay Rate \& Cross Sections}
+
+
+\section{Fermi Golden Rule}
+
+Consider time-dependent Schrödinger equation,
+\begin{align}
+    i\frac{d \psi}{d t}=\hat{H}(t)\psi.\label{eq:Schrödinger}
+\end{align}
+We can separate Hamiltonian operator into two parts, one is time-independent, and else is time-dependent,
+\begin{align}
+    \hat{H}(t)=\hat{H}_{0}+\hat{H^{\prime}}(\mathrm{x},t)
+\end{align}
+For time-independent part we can use common method to solve it,
+\begin{align}
+    \hat{H}_{0}\psi_{k}=E_{k}\psi_{k},\quad \text{and} \quad \braket{\psi_{j}}{\psi_{k}}=\delta_{jk}
+\end{align}
+Then the wavefunction can be expressed in terms of complete set of states of the unperturbed Hamiltonian as
+\begin{align}
+    \psi(\mathrm{x},t)=\sum_{k}c_{k}(t)\psi(\mathrm{x})e^{-i E_{k}t}.\label{eq:set1}
+\end{align}
+
+Then we can substitute Eq. \ref{eq:set1} into Eq. \ref{eq:Schrödinger}, we can get 
+\begin{align}
+    i \sum_k\left[\frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t}-i E_k c_k \psi_k e^{-i E_k t}\right] & =\sum_k c_k \hat{H}_0 \psi_k e^{-i E_k t}+\sum_k \hat{H}^{\prime} c_k \psi_k e^{-i E_k t} \notag\\
+    \Rightarrow \quad i \sum_k \frac{\mathrm{d} c_k}{\mathrm{~d} t} \psi_k e^{-i E_k t} & =\sum_k \hat{H}^{\prime} c_k(t) \psi_k e^{-i E_k t}\label{eq:set2}
+\end{align}
+Suppose the initial state is $i$ for $\psi_{i}\equiv \ket{i}$, that is 
+\begin{align}
+    \psi(\mathrm{x},0)=\sum_{k}c_{k}(0)\psi_{k}=c_{i}(0)\psi_{i}.
+\end{align}
+We can easily imply that $c_{k}=\delta_{ik}$. Assume that time-dependent Hamiltonian is perturbed, which implies $c_{i\neq k}\ll 1, c_{i}\sim 1$. And Eq. \ref{eq:set2} can reduce to 
+\begin{align}
+    i \sum_k \frac{\mathrm{d} c_k}{\mathrm{~d} t} \ket{k} e^{-i E_k t} \approx \hat{H}^{\prime} \ket{i} e^{-i E_i t}\label{eq:perturbed}
+\end{align}
+
+Then we need to get to final state, so we can use relation of inner product, let $\bra{f}$ act on Eq. \ref{eq:perturbed}, we can get the coefficient $c_{f}$
+\begin{align}
+    \frac{d c_{f}}{dt}=-i\matrixel{f}{\hat{H'}}{i}e^{-i(E_{i}-E_{f})t},\label{eq:one_order}
+\end{align}
+where $\matrixel{f}{\hat{H'}}{i}\equiv T_{fi}$ is \textbf{transition matrix element}, can be calculated by
+\begin{align}
+    \matrixel{f}{\hat{H'}}{i}=\int_{V}\psi^{*}_{f}(\mathrm{x})\hat{H'}\psi_{i}(\mathrm{x})\dd[3]{\mathrm{x}}.
+\end{align}
+Then we can calculate the coefficient $c_{f}$, at time $t=T$
+\begin{align}
+    c_{f}(T)=-i\int^{T}_{0}T_{fi}e^{-i(E_{i}-E_{f})t}\dd{t}
+\end{align}
+
+The probability for a transition to the state $\ket{f}$ is given by
+\begin{align}
+    P_{if}=c_{f}^{*}(t)c_{f}(t)=\abs{T_{fi}}^{2}\int^{T}_0\int^{T}_0 e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
+\end{align}
+
+And we have \textbf{transition rate} $\dd{\Gamma_{fi}}$ from the initial state $\ket{i}$ to the single final state $\ket{f}$ 
+\begin{align}
+    \dd{\Gamma_{fi}}=\frac{P_{fi}}{T}=\frac{1}{T}\abs{T_{fi}}^{2}\int^{\frac{T}{2}}_{-\frac{T}{2}}\int^{\frac{T}{2}}_{-\frac{T}{2}} e^{-i(E_{i}-E_{f})t}e^{-i(E_{i}-E_{f})t'}\dd{t}\dd{t'}
+\end{align}
+
+If we consider the time is long enough comparing to transition process, we can take a limit,
+\begin{align}
+    \mathrm{d} \Gamma_{f i}=\left|T_{f i}\right|^2 \lim _{T \rightarrow \infty}\left\{\frac{1}{T} \int_{-\frac{T}{2}}^{+\frac{T}{2}} \int_{-\frac{T}{2}}^{+\frac{T}{2}} e^{i\left(E_f-E_i\right) t} e^{-i\left(E_f-E_i\right) t^{\prime}} \mathrm{d} t \mathrm{~d} t^{\prime}\right\}.
+\end{align}
+Associated with the definition of Dirac delta-function, the integral over $\dd t'$ can be replaced by $2\pi \delta(E_{f} -E_{i})$ and thus
+\begin{align}
+    \Gamma_{f i}  =2 \pi\left|T_{f i}\right|^2\left|\frac{\mathrm{d} n}{\mathrm{~d} E_f}\right|_{E_i},
+\end{align}
+where $\left|\frac{\mathrm{d} n}{\mathrm{~d} E_f}\right|_{E_i}$ is called \textbf{density of states}, it can be also written as 
+\begin{align}
+    \rho(E_{i})=\left|\frac{\mathrm{d} n}{\mathrm{~d} E_f}\right|_{E_i}
+\end{align}
+
+\textbf{Fermi's golden rule} for the total transition rate is therefore
+\begin{align}
+    \Gamma_{fi}=2\pi \left|T_{f i}\right|^2 \rho(E_{i})
+\end{align}
+
+However, we take assumption $c_{i\neq f}(t)\approx 0$, if we need to get more precise information, we should expand more terms of transition matrix element, we start from Eq. \ref{eq:one_order}
+\begin{align}
+    \frac{\mathrm{d} c_f}{\mathrm{~d} t} \approx-i\langle f|\hat{H}| i\rangle e^{i\left(E_f-E_i\right) t}+(-i)^2 \sum_{k \neq i}\left\langle f\left|\hat{H}^{\prime}\right| k\right\rangle e^{i\left(E_f-E_k\right) t} \int_0^t\left\langle k\left|\hat{H}^{\prime}\right| i\right\rangle e^{i\left(E_k-E_i\right) t^{\prime}} \mathrm{d} t^{\prime}
+\end{align}
+Therefore, the improved approximation for the evolution of the coefficients $c_{f}(t)$ is given by
+\begin{align}
+    \frac{\mathrm{d} c_f}{\mathrm{~d} t}=-i\left(\langle f|\hat{H}| i\rangle+\sum_{k \neq i} \frac{\left\langle f\left|\hat{H}^{\prime}\right| k\right\rangle\left\langle k\left|\hat{H}^{\prime}\right| i\right\rangle}{E_i-E_k}\right) e^{i\left(E_f-E_i\right) t}.
+\end{align}
+For second order of transition matrix element, we have 
+\begin{align}
+    T_{fi}=\matrixel{f}{\hat{H}}{i}+\sum_{k \neq i} \frac{\left\langle f\left|\hat{H}^{\prime}\right| k\right\rangle\left\langle k\left|\hat{H}^{\prime}\right| i\right\rangle}{E_i-E_k}
+\end{align}
+
+\section{Decay Rate}
+
+Fermi's golden rule can be written as an alternative forma
+\begin{align}
+    \Gamma_{fi}=2\pi\int\abs{T_{fi}}^{2}\delta(E_{i}-E)\dd{n}\label{eq:fermi2}
+\end{align}
+
+Firstly consider the decay rate for the process $a\rightarrow 1+2$ in non-relativistic situation, related Fermi's golden rule, we write transition matrix element 
+\begin{align}
+    T_{fi}&=\matrixel{\psi_{1}\psi_{2}}{\hat{H'}}{\psi_{a}}\\
+    &=\int_{V}\psi^{*}_1 \psi^{*}_2\hat{H'}\psi_{a}\dd[3]{x}
+\end{align}
+
+In the Born approximation, the perturbation is taken to be small and the initial- and final-state particles are represented by plane waves of the form
+\begin{align}
+    \psi(\mathrm{x},t)=Ae^{i(\mathbf{p}\cdot \mathrm{x}-Et)},
+\end{align}
+where $A^{2}=\frac{1}{V}$ determines wavefunction normalization. We use such condition
+\begin{align}
+    \psi(x+a,y,z)=\psi(x,y,z),\quad \text{etc.},
+\end{align}
+The periodic boundary conditions on the wavefunction imply that the components of momentum are quantised to
+\begin{align}
+    (p_{x},p_{y},p_{z})=(n_{x},n_{y},n_{z})\frac{2\pi}{a}
+\end{align}
+
+Therefore, we can get the density of states,
+\begin{align}
+    \dd{n}=\dd{V(p)}\frac{V}{(2\pi)^{3}}=4\pi p^{2}\dd{p}\frac{V}{(2\pi)^{3}}
+\end{align}
+The density of states in Fermi’s golden rule then can be obtained from
+\begin{align}
+    \rho(E)=\frac{\dd{n}}{\dd{E}}=\frac{\dd{n}}{\dd{p}}\abs{\frac{\dd{p}}{\dd{E}}}
+\end{align}
+
+\subsection{Lorentz-invariant Form}
+
+To keep wavefunction normalized, a unit volume should decrease with particle energy $E=\gamma m$ increasing. For convenience, we usually take $2E$ as normalization volume
+\begin{align}
+    \int_{V}\psi'^{*}\psi'\dd[3]{x}=2E,
+\end{align}
+and therefore
+\begin{align}
+    \psi'=\sqrt{2E}\psi.
+\end{align}
+
+Therefore, we can get Lorentz-invariant form of transition matrix element
+\begin{align}
+    \mathcal{M}_{fi}=\matrixel{\psi'_{1}\psi'_{2}\cdots }{\hat{H'}}{\psi'_{a}\psi'_{b}\cdots }=\sqrt{2E_{1}\cdot 2E_{2}\cdot \cdots 2E_{a}\cdot 2E_{b}\cdots }T_{fi}
+\end{align}
+
+We go back to Fermi's golden rule. Combining with Eq. \ref{eq:fermi2}, we can get 
+\begin{align}
+    \Gamma_{f i}=\frac{(2 \pi)^4}{2 E_a} \int\left|\mathcal{M}_{f i}\right|^2 \delta\left(E_a-E_1-E_2\right) \delta^3\left(\mathbf{p}_a-\mathbf{p}_1-\mathbf{p}_2\right) \frac{\mathrm{d}^3 \mathbf{p}_1}{(2 \pi)^3 2 E_1} \frac{\mathrm{d}^3 \mathbf{p}_2}{(2 \pi)^3 2 E_2}.
+\end{align}
+It should be noticed that $\frac{\dd[3]{\mathbf{p_{i}}}}{E_{i}}$ is Lorentz-invariant.
+
+\subsection{N-body Decay}
+
+For N-body decay, we should generalize phase space, and the element of phase space can be expressed by 
+\begin{align}
+    dV_{LIPS}=\prod^{N}_{i=1} \frac{\dd[3]{\mathbf{p}_{i}}}{(2\pi)^{3}2 E_{i}},
+\end{align}
+where LIPS is known as Lorentz-invariant phase space.
+
+With the definition of Dirac-delta function, we can imply that
+\begin{align}
+    \int \delta(E^{2}_{i}-\mathbf{p}^{2}_{i}-m^{2})\dd E_{i}=\frac{1}{E_{i}}.
+\end{align}
+So, we have
+\begin{align}
+    \int \cdots dV_{LIPS}=\int \cdots \prod_{i=1}^{N}(2\pi)^{-3}\delta(E^{2}_{i}-\mathbf{p}^{2}_i-m^{2}_i)\dd[3]{\mathbf{p}_{i}}\dd E_{i}
+\end{align}
+
+Therefore, we can write element for $a\rightarrow 1+2$ decay 
+\begin{align}
+    \Gamma_{fi}=\frac{(2\pi)^{4}}{2E_{a}}\int (2\pi)^{-6}\abs{\mathcal{M}_{fi}}^{2}\delta^{4}(p_{a} -p_{a}-p_{2})\delta(p^{2}_{1}-m^{2}_{1})\delta(p^{2}_{2}-m^{2}_{2})\dd[4]{p_{1}}\dd[4]{p_{2}}
+\end{align}
+
+
+
+
+\section{Cross-Sections}

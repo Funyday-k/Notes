@@ -1,0 +1,76 @@
+\documentclass[prd,11pt]{revtex4-2}
+
+\usepackage{amsmath,amssymb,graphicx,color,microtype,physics,hyperref}
+\usepackage{footnote}
+
+\usepackage{CJK}
+
+\begin{document}
+
+\numberwithin{equation}{section}
+
+\begin{CJK*}{GB}{}
+    \title{GRB Note}
+    \date{\today}
+    \author{Lingyu Xia}
+    \maketitle
+\end{CJK*}
+
+\tableofcontents
+\section{Power Density Spectrum}
+
+\subsection{Definition}
+
+As shown on Wikipedia, for signal $x(t)$, we firstly take Fourier transformation
+
+\begin{align}
+    \hat{x}(f)=\int^{\infty}_{-\infty}  e^{-i2\pi f t}x(t)dx,
+\end{align}
+then we define the \textbf{energy spectral density}
+\begin{align}
+    \bar{S}_{x x} \equiv |\hat{x}(f)|^{2}.
+\end{align} 
+Also, for discrete-time signal, we have
+\begin{align}
+    \bar{S}_{x x}(f)=\lim_{N\rightarrow \infty}(\Delta t)^{2}\left|\sum_{n=-N}^{N}x_{n}e^{-2\pi fn\Delta t}\right|^{2}
+\end{align}
+
+$P(f_{j})$, is then calculated by choosing an appropriate normalization A. For example,
+
+\begin{align}
+    P(f_{i})=A\abs{\text{DFT}(f_{j})}^{2}=\frac{2\Delta T}{N}\abs{\text{DFT}(f_{j})}^{2}
+\end{align}
+\subsection{Motivation}
+
+From Beloborodov's work\cite{Beloborodov:1998ai}, we start to use Fourier transformation to research GRB's properties. At first, we need to figure out why should use PDS. Here we list some points to explain why PDS.
+
+\begin{itemize}
+    \item PDS is suitable for transients(\textbf{pulse-like} signals) whose energy is concentrated around on time window, which is  corresponding to the GRB. That means it's easy to do Fourier transformation on GRB signal.
+    \item Noise discrimination: Background noise tends to be Gaussian and show up as white noise in the PDS, whereas real signals exhibit characteristic "red noise" behavior.  The PDS helps distinguish genuine variations from random noise.
+    \item Identify periodic signals: Very low-frequency features in the PDS may reveal periodic or quasiperiodic signals that provide clues about the central engine.  These signals would be difficult to detect directly in the light curve.
+    
+    \item The type of signal can show intrinsic distribution, which means $\mathcal{P}(f)\propto f^{-\alpha}$. So we can classify different types of signals.
+\end{itemize}
+
+\subsection{Processing the Signals}
+
+We can do the Fourier transformation on the signal by following steps
+
+\begin{itemize}
+    \item From the event list form an evenly sampled time series $x_t$ with a bin time size $\Delta t$; 
+    \item Break this into $M$ non-overlapping intervals of length $N$; 
+    \item Compute the periodogram of each interval; 
+    \item Average the $M$ periodograms.
+\end{itemize}
+
+\begin{align}
+    \left(1-\Re\mel{\psi_{n\mathbf{k}}}{\frac{\partial }{\partial \omega}\Sigma(\omega)\eval_{E^{QP}_{n\mathbf{k}}}}{\psi_{n\mathbf{k}}}\right)^{-1}
+\end{align}
+\newpage
+
+\bibliographystyle{apsrev4-2}
+
+\bibliography{pds}
+
+
+\end{document}
