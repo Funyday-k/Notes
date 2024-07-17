@@ -105,3 +105,61 @@ Integrate them, we can get the expression of Affine connection in terms of metri
         &\Gamma^{\theta}_{r\theta}=\Gamma^{\theta}_{\theta r}=\frac{1}{r}
     \end{align}
 }
+
+
+\section{Parallel Transport}
+
+\begin{align}
+    \left(\frac{D v}{\dd \lambda}\right)^{\mu}\equiv \left(\frac{D v}{D \lambda}\right)^{\mu}=\frac{\dd x^{\sigma}}{\dd{x}}\nabla_{\sigma}v^{\mu}=0
+\end{align}
+
+We define Riemann tensor
+\begin{align}
+    {R^{\rho}}_{\sigma\mu\nu}=\partial _{\mu} \Gamma^{\rho}_{\nu\sigma}-\partial_{\nu}\Gamma^{\rho} _{\mu \sigma}+\Gamma^{\rho}_{\mu\lambda}\Gamma^{\lambda} _{\nu \sigma}-\Gamma^{\rho}_{\nu\lambda} \Gamma^{\lambda} _{\mu \sigma}
+\end{align}
+
+It follows several properties
+\begin{align}
+    \begin{cases}
+        R_{\rho\sigma\mu\nu}=R_{\mu\nu\rho \sigma}\\
+        R_{\rho \sigma \mu\nu}=-R_{\sigma\rho\mu\nu}\\
+        R_{[\rho\sigma\mu\nu]}=0\\
+        R^{\rho}_{\sigma(\nu \rho)}=0
+    \end{cases}
+\end{align}
+
+Ricci tensor and Ricci scalar
+\begin{align}
+    &R_{\mu\nu}=R^{\lambda}_{\mu\lambda \nu}\\
+    &R=R^{\mu}_\mu=g^{\mu\nu}R_{\mu\nu}
+\end{align}
+
+How many independent components does the Riemann tensor have?
+
+\begin{align}
+    &R_{[\mu\nu][\rho\sigma]}\rightarrow \frac{1}{2}\left[\frac{m(m+1)}{2}\right]\left[\frac{n(n-1)}{2}+1\right]\\
+    &R_{[\rho\sigma\mu\nu]}\rightarrow\frac{1}{4!}n(n-1)(n-2)(n-3)
+\end{align}
+
+Bianchi indentity
+\begin{align}
+    \nabla_{\lambda}R_{\rho\sigma\mu\nu}&=\partial_{\lambda}R_{\rho\sigma\mu\nu}\\
+    &=\frac{1}{2 }\partial_{\lambda}\left(\partial_{\mu}\partial_{\sigma}g_{\mu\nu}-\partial_{\mu}\partial_{\rho}g_{\nu\sigma}-\partial_{\nu}\partial_{\sigma}g_{\rho\mu}+\partial_{\nu}\partial_{\rho }g_{\mu\sigma}\right)
+\end{align}
+
+Also, we have
+\begin{align}
+    &\nabla_{\lambda}R_{\rho\sigma\mu\nu}+\nabla_{\rho}R_{\sigma\lambda\mu\nu}+\nabla_{\sigma}R_{\lambda\rho \mu\nu}=0\\
+    \implies& \nabla_{[\lambda}R_{\rho\sigma]\mu\nu}=0\\
+    \implies&0=\nabla^{\mu}R_{\rho\mu}-\nabla_{\rho}R+\nabla^{\mu}R_{\rho\mu}\\
+    \implies&\nabla^{\mu}R_{\rho\mu}=\frac{1}{2}\nabla_{\rho}R
+\end{align}
+
+We can also derive the Einstein tensor
+\begin{align}
+    &G_{\mu\nu}=R_{\mu\nu}-\frac{1}{2}Rg_{\mu\nu}\\
+    \implies&\nabla^{\mu}G_{\mu\nu}=0
+\end{align}
+
+\section{Einstein Equation}
+
