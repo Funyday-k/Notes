@@ -122,8 +122,27 @@ The full propagation euqation,
       &-\underset{\text{Fragmentation\& Radi. decay Loss}}{\frac{1}{\tau_{f} }\psi-\frac{1}{\tau_{r} }\psi}
     \end{aligned}
 \end{align}
-For Fragmentation Loss, for the i-th species, it's loss by $\rightarrow$ j-th species
- 
+For Fragmentation Loss, for the i-th species, it's loss by $\rightarrow$ j-th species 
+\begin{align}
+    \frac{\partial n_{i} }{\partial t}=-n_{i}(\frac{\rho}{m})_{ism}\sigma_{i\rightarrow j}v   
+\end{align}
+ For radioactive decay loss,
+ \begin{align}
+     \frac{\partial n_{i} }{\partial t}=-n_{i}\frac{1}{\tau_{i} }, \tau_{i} \text{\; is the lifetime}  
+ \end{align}
+
+For simple case: Leaky box approx, one species dominates the production, $Q=0$. We have relation,
+\begin{align}
+    \frac{n_{i} }{T_{e} }=-\frac{n_{i} }{T_{f} }-\frac{n_{i} }{T_{dec} }+C_{i} 
+\end{align}
+where $C_{i} $ is the production of "i" due to other species, then we can get expression of $n_{i} $,
+\begin{align}
+    n_{i}=\frac{C_{i} }{1/T_{e}+1/T_{f}+1/T_{dec}   } 
+\end{align}
+
+
+
+
 %%% References
 
 %% Note: use of BibTeX als works!!
