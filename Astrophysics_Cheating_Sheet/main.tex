@@ -1,0 +1,134 @@
+\documentclass{sciposter}
+\usepackage{lipsum}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx,url,physics}
+\usepackage[portuges, brazil, english]{babel}   
+\usepackage[utf8]{inputenc}
+%\usepackage{fancybullets}
+\newtheorem{Def}{Definition}
+
+
+\title{Nome do Projeto}
+%Título do projeto
+
+\author{Nome do Aluno \& Nome do Orientador}
+%nome dos autores
+
+\institute 
+{Bacharelado em Engenharia de Computação\\
+CEFET/RJ - campus Petrópolis - Avenida do Imperador, 971}
+%Nome e endereço da Instituição
+
+\email{e-mail do aluno}
+% Onde você coloca os emails dos integrantes
+
+
+%\date is unused by the current \maketitle
+
+\rightlogo[1]{logoEngComp}
+\leftlogo[1]{logoCefetCampusPetropolis}
+% Exibe os logos (direita e esquerda) 
+% Procure usar arquivos png ou jpg, e de preferencia mantenha na mesma pasta do .tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+
+
+
+\begin{document}
+%define conference poster is presented at (appears as footer)
+
+% \conference{{\bf SEPEX 2017}, Semana de Ensino, Pesquisa \& Extensão}
+
+%\LEFTSIDEfootlogo  
+% Uncomment to put footer logo on left side, and 
+% conference name on right side of footer
+
+% Some examples of caption control (remove % to check result)
+
+%\renewcommand{\algorithmname}{Algoritme} % for Dutch
+
+%\renewcommand{\mastercapstartstyle}[1]{\textit{\textbf{#1}}}
+%\renewcommand{\algcapstartstyle}[1]{\textsc{\textbf{#1}}}
+%\renewcommand{\algcapbodystyle}{\bfseries}
+%\renewcommand{\thealgorithm}{\Roman{algorithm}}
+
+% \maketitle
+
+%%% Begin of Multicols-Enviroment
+\begin{multicols}{3}
+
+%%% Abstract
+
+\section{Spectrum}
+
+Y-axis$= E^{2}\frac{\dd{J}}{\dd{E}} $, means per \textbf{area} per \textbf{time} per \textbf{solid angle} per \textbf{energy}.
+%%% Introduction
+\section{Cross Section}
+One paritcle interaction, 
+\begin{itemize}
+  \item $\sigma_{AB}n_{B}L \ll 1  $: very likely to pass through(\textbf{optically thin})
+  \item $\sigma_{AB}n_{B}L \gg 1:  $ very likely to interact(\textbf{optically thick})
+\end{itemize}
+
+Probability:
+\begin{align}
+    P=1-e^{-n\sigma L} 
+\end{align}
+where $\tau=n\sigma L$ is called \textbf{Optical Depth}.
+
+Unit: Barn $1 barn = 10^{-28}m^{2}  $.
+
+
+
+
+\section{Diffusion Model}
+
+Diffusion-loss equation,
+\begin{align}
+    \frac{\partial n}{\partial t}=\nabla \cdot \left(D \vec{\nabla}n\right)-\frac{\partial}{\partial E}(n\dot{E})+Q
+\end{align}
+Diffusion-Convection equation,
+\begin{align}
+    \frac{\partial}{\partial t}n=\nabla \cdot \left(D\vec{\nabla}n-\vec{V}n\right)-\frac{\partial }{\partial E}(n\dot{E})+Q
+\end{align}
+with momentum loss term $\dot{p}=-\frac{1}{3}(\nabla \cdot V)p$.
+
+Rigity: $R=\frac{p}{q}$. Motivation: Lamor Radius is propotional to the rigity $r_{g}=\frac{p_{\bot } }{q} $.
+
+Number of particles per phase space: $f=\frac{\dd{N}}{\dd[3]{p}\dd[3]{x}}$.
+
+Differential number density of particles, $n=\frac{\dd{N}}{\dd{p}\dd[3]{x}}=4\pi p^{2}f $.
+
+From diffusion-loss equations, we can imply $$D\frac{\partial f}{\partial r}+\frac{V_{p} }{3}\frac{\partial f}{\partial p}=0 \implies \dd{f}(r,p)=0 \implies f(r_{1},p_{1}  )=f(r_{1},p_{1}  )  $$ 
+with definition of flux $I=v n/(4 \pi)=vp^{2}f  $, we have relation
+\begin{align}
+    \frac{I(p)}{v p^{2} }=\frac{I(p_{ILS} ) }{v_{LIS}p_{LIS}^{2}   }
+\end{align}
+combining with solar modulation potential $\phi$, we have 
+\begin{align}
+    \frac{I(p)}{v p^{2} }=\frac{I(p+\phi ) }{v_{lis}(p+\phi)^{2}    }
+\end{align}
+
+\section{CR Secondaries}
+The full propagation euqation,
+
+\begin{align}
+    \begin{aligned}
+      \frac{\partial \psi(r,p,t)}{\partial t}&=q(r,p,t)+\overset{\text{Diffusion Convection}}{\nabla\cdot (D_{xx}\nabla \psi-V\psi )}\\
+      &+\underset{\text{Re-acceleration}}{\frac{\partial  }{\partial p}p^{2}D_{pp}\frac{\partial }{\partial p}\frac{1}{p^{2} }\psi  }-\underset{\text{Continuous Energy Loss}}{\frac{\partial }{\partial p}\left[\dot{p}\psi-\frac{p}{3}(\nabla\cdot V)\psi\right]}\\
+      &-\underset{\text{Fragmentation\& Radi. decay Loss}}{\frac{1}{\tau_{f} }\psi-\frac{1}{\tau_{r} }\psi}
+    \end{aligned}
+\end{align}
+For Fragmentation Loss, for the i-th species, it's loss by $\rightarrow$ j-th species
+ 
+%%% References
+
+%% Note: use of BibTeX als works!!
+
+
+\end{multicols}
+
+\end{document}
