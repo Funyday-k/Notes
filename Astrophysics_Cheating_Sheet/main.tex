@@ -140,12 +140,54 @@ where $C_{i} $ is the production of "i" due to other species, then we can get ex
     n_{i}=\frac{C_{i} }{1/T_{e}+1/T_{f}+1/T_{dec}   } 
 \end{align}
 
+\section{Collision}
+
+We can use Lorentz Invariant $s$,
+\begin{align}
+    s=(p^{\mu}+p^{\nu}  )^{2} 
+\end{align}
+where $p^{\mu}=(\frac{E}{c},p^{1},p^{2},p^{3}   ) $.
+
+And definition of Differential cross section,
+\begin{align}
+    \frac{\dd{\sigma_{i\rightarrow j} }}{\dd{T_{i} }}(T_{i},E_{j}  )
+\end{align}
+
+Total corss section: 
+\begin{align}
+    \frac{\dd{P}}{\dd{t}}=n\sigma
+\end{align}
+and differential cross section,
+\begin{align}
+    \frac{\dd{P}}{\dd{t}\dd{T}}=n\frac{\dd{\sigma}}{\dd{T}}
+\end{align}
+thus, using differential cross section, the number of $\bar{p}$ in interaction $p+p\rightarrow \bar{p}+X$ can be expressed by
+\begin{align}
+    n_{\bar{p}}(T_{\bar{p}} ) =\left(\int_{E_{th} }n_{p}\frac{\dd{\sigma_{pp\rightarrow\bar{p}X} }}{\dd{T_{\bar{p}} }}(E_{p},T_{p}  )\dd{E_{p} }-n_{\bar{p}}\sigma_{\bar{p}\rightarrow X}    \right)\frac{X}{m}
+\end{align}
 
 
 
-%%% References
+\section{Electron-Matter Interaction}
+A particle interacts with stuff lower energy than
+itself causes energy loss through following mechanisms. In matter:
+\begin{itemize}
+    \item Ionization: Kick off electrons from atoms
+    \item Bremsstrahlung: curved trajectory emit phonon
+\end{itemize}
+In space:
+\begin{itemize}
+    \item Inverse-Compton scattering
+    \item Synchrotron radiation
+\end{itemize}
+With electrons/positrons:
+\begin{itemize}
+    \item Moller/Bhabba scattering: $e^{-} +e^{+}+ $ electron scattering
+    \item Positron annihilation: $e^{-}+e^{+}\rightarrow \gamma+\gamma  $
+\end{itemize}
 
-%% Note: use of BibTeX als works!!
+
+
 
 
 \end{multicols}
