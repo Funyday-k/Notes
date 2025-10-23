@@ -330,18 +330,18 @@ The production mechanism is a multi-step decay process initiated by high-energy 
 \end{enumerate}
 
 \subsection{Predicted Positron Fraction}
-This secondary production model can be calculated (Slide 10). Because the initial protons have a falling energy spectrum, the resulting secondary positrons also have a falling spectrum. This model predicts that the positron fraction should \textbf{decrease} with increasing energy (Slide 11, 12 - black line).
+This secondary production model can be calculated. Because the initial protons have a falling energy spectrum, the resulting secondary positrons also have a falling spectrum. This model predicts that the positron fraction should \textbf{decrease} with increasing energy.
 
 \section{The Positron Anomaly}
 The central puzzle in this field is the "positron anomaly," which is a major discrepancy between the theoretical prediction and experimental observation.
 
 \subsection{The PAMELA Discovery}
-\textbf{PAMELA} (Payload for Antimatter Matter Exploration and Light-nuclei Astrophysics) experiment published results showing that the positron fraction does not fall with energy. Instead, it \textbf{begins to rise} at energies above $\sim 10$ GeV (Slide 12). This was a significant anomaly.
+\textbf{PAMELA}  experiment published results showing that the positron fraction does not fall with energy. Instead, it \textbf{begins to rise} at energies above $\sim 10$ GeV. This was a significant anomaly.
 
 \subsection{Confirmation by AMS and Fermi}
-This anomalous rising fraction was not an error. It was subsequently confirmed with higher precision by two other major experiments (Slide 14):
+This anomalous rising fraction was not an error. It was subsequently confirmed with higher precision by two other major experiments:
 \begin{itemize}
-    \item \textbf{Fermi-LAT (Large Area Telescope):} Confirmed the rise, even without a magnet, by cleverly using the Earth's magnetic field to separate $e^+$ and $e^-$ (Slide 15).
+    \item \textbf{Fermi-LAT (Large Area Telescope):} Confirmed the rise, even without a magnet, by cleverly using the Earth's magnetic field to separate $e^+$ and $e^-$.
     \item \textbf{AMS-02 (Alpha Magnetic Spectrometer):} Provided the most precise measurement to date, confirming the rise up to hundreds of GeV.
 \end{itemize}
 
@@ -353,56 +353,40 @@ The confirmed anomaly means there must be an \textbf{additional source} (or sour
     \item \textbf{Exotic Sources:} The anomaly also generated excitement for potential exotic sources, such as the annihilation or decay of \textbf{Dark Matter} particles, which could produce $e^+ e^-$ pairs.
 \end{itemize}
 
-The data from AMS-02 (shown in Slide 17) can be well-fitted by models that include both the standard secondary production (dashed line) and an additional component from pulsars (e.g., Monogem, Vela).
 
 \section{Gamma Ray}
+For detection, at high energy, pair creation dominates the cross section: $\gamma+A \rightarrow A+e^{+}+e^{-}  $.
 
+For prodection,
 \begin{itemize}
-  \item \textbf{Detection Methods}
-    \begin{itemize}
-      \item \textbf{Main Principle: Pair Production} ($\gamma \rightarrow e^+ + e^-$)
-      \item \textbf{Space Telescopes (e.g., Fermi-LAT)}
-        \begin{itemize}
-          \item Orbit above atmosphere.
-          \item Use conversion foils to create $e^+e^-$ pair.
-          \item Tracker reconstructs direction; Calorimeter measures energy.
-        \end{itemize}
-      \item \textbf{Ground Telescopes (e.g., LHAASO)}
-        \begin{itemize}
-          \item Detect "air showers" (particle cascades) in the atmosphere.
-          \item Sample particles that reach the ground.
-        \end{itemize}
-    \end{itemize}
-
-  \item \textbf{Production Mechanisms}
-    \begin{itemize}
-      \item \textbf{Leptonic (from Electrons)}
-        \begin{itemize}
-          \item \textbf{Bremsstrahlung:} $e^-$ "brakes" in a field, emits $\gamma$.
-          \item \textbf{Inverse Compton:} $e^-$ "boosts" a low-energy photon to a $\gamma$.
-        \end{itemize}
-      \item \textbf{Hadronic (from Protons): \textit{The "smoking gun"}}
-        \begin{itemize}
-          \item Proton-proton collision creates a \textbf{Neutral Pion ($\pi^0$)}.
-          \item Pion instantly decays: $\pi^0 \rightarrow \gamma + \gamma$.
-        \end{itemize}
-    \end{itemize}
-
-  \item \textbf{Key Discoveries}
-    \begin{itemize}
-      \item \textbf{The "Pion Bump"}:
-        \begin{itemize}
-          \item Unique spectral signature of Hadronic (pion) decay.
-          \item \textbf{Fermi-LAT} saw this in Supernova Remnants (SNRs).
-          \item \textbf{Proof:} SNRs accelerate protons (cosmic rays).
-        \end{itemize}
-      \item \textbf{PeVatrons}:
-        \begin{itemize}
-          \item Discovered by \textbf{LHAASO} at PeV (quadrillion eV) energies.
-          \item These are the Galactic "factories" accelerating particles to the highest energies.
-        \end{itemize}
-    \end{itemize}
+    \item Electron $\rightarrow$ matter: Bremsstrahlung gamma rays
+    \item Electron $\rightarrow$ radiation: Inverse Compton gamma rays
 \end{itemize}
+
+For IC emission,
+\begin{align}
+    &\frac{\dd{n}}{\dd{E_{\gamma} }\dd{t}}=\int \frac{\dd{n_{e} }}{\dd{E_{e} \dd{\Omega_{e} }}
+    }\frac{\dd{N}}{\dd{E_{\gamma} }\dd{t}}\dd{E_{e} }\dd{\Omega_{e} }\\
+    &P=E_{\gamma}\frac{\dd{N}}{\dd{E_{\gamma} }\dd{t}} 
+\end{align}
+
+PP interactions:
+
+\begin{figure}
+    \centering 
+    \includegraphics[width=1\textwidth]{1.png}
+    \caption{The lightest hadronic states are pions, so they are the primary products from proton-proton interactions}
+\end{figure}
+
+\subsection{pionic gamma-ray production}
+$pp\rightarrow \pi^{0}\rightarrow \gamma $
+Minimum pion energy to produce a photon with energy $E_{\gamma} $ $$E_{min}=E_{\gamma} +\frac{m_{\pi}^{2}  }{4E_{\gamma} }$$ 
+Gamma-ray emissivity(photons per volume per time per energy):
+\begin{align}
+    \frac{\dd{n}}{\dd{E_{\gamma} }}=\iint \frac{\dd{n_{p} }}{\dd{E_{p} }}\frac{\dd{\sigma_{pp \rightarrow \pi} }}{\dd{E_{\pi} }}n_{ISM}c\frac{\dd{N_{\pi \rightarrow \gamma} }}{\dd{E_{\gamma} }}\dd{E_{\pi} }\dd{E_{p} } 
+ \end{align}
+
+
 
 \section{UHE Cosmic Ray}
 
