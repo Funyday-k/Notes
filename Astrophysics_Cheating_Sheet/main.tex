@@ -385,20 +385,36 @@ Gamma-ray emissivity(photons per volume per time per energy):
 \begin{align}
     \frac{\dd{n}}{\dd{E_{\gamma} }}=\iint \frac{\dd{n_{p} }}{\dd{E_{p} }}\frac{\dd{\sigma_{pp \rightarrow \pi} }}{\dd{E_{\pi} }}n_{ISM}c\frac{\dd{N_{\pi \rightarrow \gamma} }}{\dd{E_{\gamma} }}\dd{E_{\pi} }\dd{E_{p} } 
  \end{align}
+With angular,
+\begin{align}
+    \begin{aligned}
+        &E_{\gamma}=\frac{m_{\pi} }{2}\gamma (1+\beta \cos \theta') \\
+        \implies&\begin{cases}
+            \frac{\dd{N}}{\dd{E_{\gamma} }}=\frac{2}{m_{\pi} \gamma \beta},\quad E_{min}(\beta)<E_{\gamma}<E_{max}(\beta)  \\
+             \frac{\dd{N}}{\dd{E_{\gamma} }}=\frac{2}{m_{\pi} \gamma \beta}\Theta(E_{\gamma}-E_{min}  )\Theta(E_{max}-E_{\gamma}  )
+        \end{cases}
+    \end{aligned}
+\end{align}
 
 
-
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{2.png}
+    \caption{\label{fig:2.png2}
+        Shape of pion spectrum
+    }
+\end{figure}
 \section{UHE Cosmic Ray}
 
-\begin{itemize}
-    \item \textbf{UHECR Basics}
+
+\textbf{UHECR Basics}
     \begin{itemize}
         \item \textbf{Definition:} Cosmic rays with energy above the "Knee" ($> 1 \text{ PeV}$).
         \item \textbf{Origin: Extragalactic.}
         \item \textbf{Reason:} The Milky Way's magnetic field is too weak to contain them (based on Larmor Radius calculation).
     \end{itemize}
 
-    \item \textbf{The Four Big Mysteries}
+\textbf{The Four Big Mysteries}
     \begin{itemize}
         \item \textbf{1. Source:} Unknown.
         \item \textbf{2. Direction:} Mostly isotropic (uniform).
@@ -417,20 +433,20 @@ Gamma-ray emissivity(photons per volume per time per energy):
             \end{itemize}
     \end{itemize}
 
-    \item \textbf{The GZK Limit}
+ \textbf{The GZK Limit}
     \begin{itemize}
-        \item \textbf{Theory:} (Greisen-Zatsepin-Kuzmin) High-energy protons will interact with the Cosmic Microwave Background (CMB) photons ($p + \gamma_{CMB}$).
-        \item \textbf{Effect:} This interaction causes the proton to lose energy, creating a "horizon." We can only see UHECR sources from relatively nearby ($\sim 100 \text{ Mpc}$).
+        \item \textbf{Theory:} (Greisen-Zatsepin-Kuzmin) High-energy protons will interact with the Cosmic Microwave Background (CMB) photons ($p + \gamma_{CMB}\rightarrow \Delta^{+}\rightarrow p+\pi^{0} / n+ \pi^{+}   $).
+        \item \textbf{Effect:} This interaction causes the proton to lose energy, creating a "horizon." We can only see UHECR sources from relatively nearby ($\sim 100 \text{ Mpc}$) .
         \item \textbf{The Catch:} This cutoff energy only works for protons. If UHECRs are heavy nuclei (like Iron), the cutoff energy is different.
     \end{itemize}
 
-    \item \textbf{Multi-Messenger Solution}
+\textbf{Multi-Messenger Solution}
     \begin{itemize}
         \item \textbf{Cosmic Rays:} Are charged, so they are bent by magnetic fields and don't point to their source.
         \item \textbf{Gamma Rays:} Are neutral, but they get absorbed by background light over long distances ($\gamma + \gamma \rightarrow e^+e^-$).
         \item \textbf{Neutrinos:} Are neutral and barely interact. They are the best tool to point directly back to the UHECR sources.
     \end{itemize}
-\end{itemize}
+
 
 
 
